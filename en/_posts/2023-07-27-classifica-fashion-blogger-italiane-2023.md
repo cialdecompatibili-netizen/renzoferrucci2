@@ -1,0 +1,43 @@
+---
+layout: single
+title: "Ranking: Italian fashion bloggers 2023"
+date: 2023-07-27
+excerpt: "Fashion bloggers are true style icons, who share their passions, their outfits and their fashion advice through social networks and their websites. In Italy, there are many fashion bloggers who have stood out for their taste, creativity and"
+seo_title: "Ranking: Italian fashion bloggers 2023"
+header:
+  teaser: /assets/posts/classifica-fashion-blogger-italiane-2023/fashion-blogger-fumetto.jpeg
+categories:
+  - magazine
+ref: classifica-fashion-blogger-italiane-2023
+lang: en
+locale: en
+tr: tradotto
+tr_hash: e808gw
+permalink: /en/magazine/ranking-italian-fashion-bloggers-2023/
+redirect_from:
+  - /en/en/magazine/classifica-fashion-blogger-italiane-2023/
+  - /en/magazine/classifica-fashion-blogger-italiane-2023/
+---
+<p>Fashion bloggers are true style icons, who share their passions, their outfits and their fashion advice through social networks and their websites. In Italy, there are many fashion bloggers who have stood out for their taste, their creativity and their influence in the world of fashion. Some of them have become real stars, with millions of followers, collaborations with big brands and presences in the most important fashion weeks. Others are emerging, who are gaining more and more visibility and appreciation thanks to their originality and personality.</p>
+<p>In this article, we want to present you a ranking of the most famous Italian fashion bloggers in 2023, based on Instagram data and web search results. Let's find out together who the queens of Italian style are, who inspire thousands of people every day with their looks and advice.</p>
+
+<h2><span class="ez-toc-section" id="1_Chiara_Ferragni"></span>1. Chiara Ferragni<span class="ez-toc-section-end"></span></h2>
+<p><a class="tooltip-target" data-citationid="d61eae88-6e6c-81af-9158-f64c1bd10c20-7-group">Chiara Ferragni</a>, the most famous Italian fashion blogger in the world, could not be missing from first place in the ranking.&nbsp;<a class="tooltip-target" data-citationid="d61eae88-6e6c-81af-9158-f64c1bd10c20-9-group">With over 24 million followers on Instagram</a>, Chiara is a true entrepreneur, who has created an empire with her blog The Blonde Salad and her clothing and accessories line Chiara Ferragni Collection. Chiara is also a happy mother of two children, Leone and Vittoria, born from her marriage to the rapper Fedez. Chiara is always up to date with the latest trends, but never fails to express her personality and her ironic spirit with her outfits.</p>
+<h2><span class="ez-toc-section" id="2_Veronica_Ferraro"></span>2. Veronica Ferraro<span class="ez-toc-section-end"></span></h2>
+<p>In second place in the ranking we find Veronica Ferraro, the founder of the blog The Fashion Fruit. Veronica began her career as a fashion blogger in 2010, after studying law. Since then, he has gained over 1.5 million followers on Instagram, thanks to his elegant and sophisticated style, but also versatile and suitable for any occasion. Veronica collaborates with several fashion and beauty brands, including Dior, Bulgari and L'Oréal. Veronica is also a sportswoman and a traveler, who loves discovering new destinations and cultures.</p>
+<h2><span class="ez-toc-section" id="3_Irene_Buffa"></span>3. Irene Buffa<span class="ez-toc-section-end"></span></h2>
+<p>In third place in the ranking we have Irene Buffa, the creator of the blog Onto My Wardrobe. Irene was born in Rome, but lives in Mexico City with her boyfriend Emiliano Salci. Irene has a minimalist and chic style, which is inspired by Parisian atmospheres and Mexican influences. Irene has over 800 thousand followers on Instagram, where she shows off her impeccable looks and her adventures around the world. Irene is also a professional photographer and jewelry designer, with her own line Onto My Wardrobe Jewelry.</p>
+<h2><span class="ez-toc-section" id="4_Eleonora_Carisi"></span>4. Eleonora Carisi<span class="ez-toc-section-end"></span></h2>
+<p>In fourth place in the ranking is Eleonora Carisi, the founder of the blog Jou Jou Villeroy. Eleonora is a true Turin native who has transformed her passion for fashion into a profession. Eleonora has an eclectic and original style, which mixes vintage pieces with high fashion items. Eleonora has over 700 thousand followers on Instagram, where she shares her dream outfits and her experiences as an entrepreneur. Eleonora is in fact the owner of two boutiques in Turin, You You Store and Wait and See, where she offers a selection of emerging and international brands.</p>
+<h2><span class="ez-toc-section" id="5_Chiara_Biasi"></span>5. Chiara Biasi<span class="ez-toc-section-end"></span></h2>
+<p>In fifth place in the ranking we find Chiara Biasi, the founder of the Chiara Biasi Official blog. Chiara is a 31 year old from Pordenone, who began to make herself known as a fashion blogger in 2011, after meeting Chiara Ferragni in Milan. Since then, she has accumulated over 2 million followers on Instagram, thanks to her sexy and glamorous, but also sporty and casual style. Chiara is also a bikini designer, for which she has a weakness and signs Bikini Lovers and Poisson d'Amour. The latter also loved and worn by Rihanna and Bella Hadid. Chiara is engaged to the footballer Simone Zaza, with whom she lives in Turin.</p>
+<h2><span class="ez-toc-section" id="6_Nicoletta_Reggio"></span>6. Nicoletta Reggio<span class="ez-toc-section-end"></span></h2>
+<p>In sixth place in the ranking we have Nicoletta Reggio, the founder of the blog Scent of Obsession. Nicoletta is a 32 year old Sicilian, who has lived in Milan since she was 18. Nicoletta has a romantic and feminine style, which is also reflected in her choice of perfumes, from which her blog takes its name. Nicoletta has over 600 thousand followers on Instagram, where she shows her delicate and refined looks, but also her moments of daily life and her passions for food, travel and animals.</p>
+<h2><span class="ez-toc-section" id="7_Irene_Colzi"></span>7. Irene Colzi<span class="ez-toc-section-end"></span></h2>
+<p>In seventh place in the ranking is Irene Colzi, the founder of the blog Irene's Closet. Irene is a 33 year old Florentine, who started writing her blog in 2009, after studying economics and business. Irene has a colorful and lively style, which reflects her sunny and positive personality. Irene has over 500 thousand followers on Instagram, where she shares her cheerful and creative outfits, but also her beauty tips, her travels and her recipes. Irene is also a writer and a radio speaker, as well as a mother of two children, Leonardo and Ginevra.</p>
+<h2><span class="ez-toc-section" id="8_Chiara_Nasti"></span>8. Chiara Nasti<span class="ez-toc-section-end"></span></h2>
+<p>In eighth place in the ranking we find Chiara Nasti, the founder of the Chiara Nasti Official blog. Chiara is a 23 year old Neapolitan, who started getting noticed as a fashion blogger in 2013, when she was only 15 years old. Since then, she has reached over 1.8 million followers on Instagram, thanks to her provocative and seductive, but also sweet and cheeky style. Chiara is also a model and an influencer, who collaborates with several fashion and beauty brands, including Guess, Maybelline and Calzedonia.</p>
+<h2><span class="ez-toc-section" id="9_Valentina_Ferragni"></span>9. Valentina Ferragni<span class="ez-toc-section-end"></span></h2>
+<p>In ninth place in the ranking we have Valentina Ferragni, Chiara Ferragni's younger sister. Valentina is 27 years old and was born in Cremona, but lives in Milan. Valentina has a simple and natural style, which adapts to different occasions and seasons. Valentina has over 2 million followers on Instagram, where she shows her sober and elegant looks, but also her moments of family life and her passions for fitness, singing and dancing. Valentina is also an entrepreneur, who launched her clothing line VF Collection.</p>
+<h2><span class="ez-toc-section" id="10_Giulia_Gaudino"></span>10. Giulia Gaudino<span class="ez-toc-section-end"></span></h2>
+<p>In tenth place in the ranking is Giulia Gaudino, the founder of the Giulia Gaudino Official blog. Giulia is a 29 year old from Turin, who started writing her blog in 2012, after studying foreign languages ​​and literature. Giulia has a bon ton and sophisticated style, which is inspired by style icons of the past, such as Audrey Hepburn and Grace Kelly. Giulia has over 400 thousand followers on Instagram, where she shares her refined outfits with attention to the smallest details, but also her dream trips and her experiences as an influencer.</p>

@@ -31,3 +31,35 @@
 # Per levare una tendina: cancella il blocco, la voce torna un link normale.
 # Documentazione del funzionamento: commento in testa a _includes/masthead.html.
 # =====================================================================================
+
+Negozio:
+  - title: "Tutti i prodotti"
+    url: /negozio/
+  - divider: true
+  - title: "Uomo"
+    url: /negozio/categoria/uomo/
+  - title: "Donna"
+    url: /negozio/categoria/donna/
+  - title: "Accessori"
+    url: /negozio/categoria/accessori/
+
+Journal:
+  - title: "Stilisti"
+    url: /categoria/?cat=stilisti
+  - title: "Case di moda"
+    url: /categoria/?cat=case-di-moda
+  - title: "Moda e star"
+    url: /categoria/?cat=moda-e-star
+  - title: "Modelle"
+    url: /categoria/?cat=modelle
+  - title: "Classifiche"
+    url: /categoria/?cat=classifiche
+  - title: "Fotografi di moda"
+    url: /categoria/?cat=fotografi-di-moda
+  - title: "Riviste di moda"
+    url: /categoria/?cat=riviste-di-moda
+  - title: "Trend"
+    url: /categoria/?cat=trend
+  - divider: true
+  - title: "Tutti gli articoli"
+    url: /blog/

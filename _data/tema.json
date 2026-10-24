@@ -2,9 +2,9 @@
   "accent": "#8a6d3b",
   "accent_dark": "#141414",
   "nav_bg": "#ffffff",
-  "nav_text": "#0e1116",
+  "nav_text": "#141414",
   "nav_hover": "#8a6d3b",
   "body_bg": "#ffffff",
-  "text": "#26333b",
+  "text": "#2b2825",
   "link": "#8a6d3b"
 }

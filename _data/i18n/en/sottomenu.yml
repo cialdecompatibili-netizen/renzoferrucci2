@@ -1,1 +1,33 @@
 # English dropdown menus (empty = none). Each key must be IDENTICAL to a title in navigation.yml of this folder.
+
+Shop:
+  - title: "All products"
+    url: /en/shop/
+  - divider: true
+  - title: "Men"
+    url: /en/shop/category/men/
+  - title: "Women"
+    url: /en/shop/category/women/
+  - title: "Accessories"
+    url: /en/shop/category/accessories/
+
+Journal:
+  - title: "Designers"
+    url: /en/category/?cat=stilisti
+  - title: "Fashion houses"
+    url: /en/category/?cat=case-di-moda
+  - title: "Fashion & stars"
+    url: /en/category/?cat=moda-e-star
+  - title: "Models"
+    url: /en/category/?cat=modelle
+  - title: "Rankings"
+    url: /en/category/?cat=classifiche
+  - title: "Fashion photographers"
+    url: /en/category/?cat=fotografi-di-moda
+  - title: "Fashion magazines"
+    url: /en/category/?cat=riviste-di-moda
+  - title: "Trends"
+    url: /en/category/?cat=trend
+  - divider: true
+  - title: "All articles"
+    url: /en/blog/

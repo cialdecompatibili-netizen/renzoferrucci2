@@ -10,12 +10,10 @@
 main:
   - title: "Home"
     url: /
-  - title: "Servizi"
-    url: /servizi/
-  - title: "Blog"
-    url: /blog/
-  - title: "Shop"
+  - title: "Negozio"
     url: /negozio/
+  - title: "Journal"
+    url: /blog/
   - title: "Chi siamo"
     url: /chi-siamo/
   - title: "Contatti"

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Blog
+title: Journal
 author_profile: false
 classes: wide
 share: false
