@@ -1,0 +1,40 @@
+{%- comment -%}
+GUIDA-SVILUPPO: BANNER VENDITA (markup + stile). Non si include a mano: lo inserisce _includes/contenuto-con-banner.html a meta' di ogni articolo.
+TESTI: _data/banner_vendita.yml (per lingua). PRODOTTO: scelto in automatico tra i visibili di _data/catalogo.json (varia da articolo ad articolo).
+Link prodotto/negozio: shop-url.html (corretto in ogni lingua). Spegnere in una pagina: front matter  banner_vendita: false
+{%- endcomment -%}
+{%- assign bv_d = site.data.banner_vendita[page.lang] | default: site.data.banner_vendita.it -%}
+{%- assign bv_vis = site.data.catalogo.prodotti | where: "visibile", true -%}
+{%- if bv_vis.size > 0 -%}
+{%- assign bv_i = page.title | size | modulo: bv_vis.size -%}
+{%- assign bv_p = bv_vis[bv_i] -%}
+{%- assign bv_nome = bv_p.tr[page.lang].nome | default: bv_p.nome -%}
+{%- assign bv_e = bv_p.prezzo_centesimi | divided_by: 100 -%}
+{%- if bv_e >= 1000 -%}{%- assign bv_k = bv_e | divided_by: 1000 -%}{%- assign bv_r = bv_e | modulo: 1000 -%}{%- if bv_r < 10 -%}{%- assign bv_r = bv_r | prepend: "00" -%}{%- elsif bv_r < 100 -%}{%- assign bv_r = bv_r | prepend: "0" -%}{%- endif -%}{%- capture bv_prezzo -%}{{ bv_k }}.{{ bv_r }}{%- endcapture -%}{%- else -%}{%- assign bv_prezzo = bv_e -%}{%- endif -%}
+<style>
+.bv{display:grid;grid-template-columns:minmax(120px,200px) 1fr;gap:0;clear:both;margin:2.2rem 0;background:#f6f3ef;border:1px solid #e9e3d9;border-radius:18px;overflow:hidden;font-family:'Inter',system-ui,sans-serif;color:#141414;line-height:1.45}
+.bv *{box-sizing:border-box}
+.bv-img{display:block;background:#f3eee6;min-height:100%}
+.bv-img img{display:block;width:100%;height:100%;object-fit:cover;margin:0}
+.bv-body{display:flex;flex-direction:column;gap:.5rem;padding:1.3rem 1.5rem}
+.bv-k{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#8a6d3b;font-weight:600}
+.bv-t{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:1.35rem;line-height:1.25;margin:0;padding:0;border:0}
+.bv-x{margin:0;font-size:.95rem;color:#5b5650}
+.bv-n{margin:.2rem 0 0;font-size:.95rem;font-weight:600}
+.bv-n span{color:#8a6d3b;margin-left:.4rem;white-space:nowrap}
+.bv-b{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.1rem;margin-top:.5rem}
+.page__content .bv .bv-c{display:inline-flex;align-items:center;min-height:44px;padding:0 1.4rem;background:#141414;border:1.5px solid #141414;border-radius:999px;color:#fff;font-size:.92rem;font-weight:600;text-decoration:none;transition:background .2s,color .2s}
+.page__content .bv .bv-c:hover{background:#8a6d3b;border-color:#8a6d3b;color:#fff}
+.page__content .bv .bv-l{font-size:.85rem;font-weight:600;color:#8a6d3b;text-decoration:none;border-bottom:1px solid #cabda7;padding-bottom:2px}
+.page__content .bv .bv-l:hover{color:#141414;border-color:#141414}
+.page__content .bv a:focus-visible{outline:3px solid #8a6d3b;outline-offset:2px}
+@media(max-width:560px){.bv{grid-template-columns:1fr}.bv-img{aspect-ratio:4/3;min-height:0}}
+@media(prefers-reduced-motion:reduce){.page__content .bv .bv-c{transition:none}}
+</style>
+<aside class="bv" aria-label="{{ bv_d.titolo | escape }}">
+<a class="bv-img" href="{% include shop-url.html k='prod' id=bv_p.id %}" tabindex="-1" aria-hidden="true"><img src="{{ bv_p.immagine | relative_url }}" alt="{{ bv_nome | escape }}" loading="lazy" decoding="async"></a>
+<div class="bv-body"><span class="bv-k">{{ bv_d.kicker }}</span><p class="bv-t">{{ bv_d.titolo }}</p><p class="bv-x">{{ bv_d.testo }}</p>
+<p class="bv-n">{{ bv_nome }}<span>&euro; {{ bv_prezzo }}</span></p>
+<div class="bv-b"><a class="bv-c" href="{% include shop-url.html k='prod' id=bv_p.id %}">{{ bv_d.cta }}</a><a class="bv-l" href="{% include shop-url.html k='shop' %}">{{ bv_d.cta2 }}</a></div></div>
+</aside>
+{%- endif -%}

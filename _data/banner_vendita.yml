@@ -1,0 +1,19 @@
+# BANNER VENDITA NEGLI ARTICOLI - TESTI (unico punto dove si modificano)
+# Compare da solo a meta' di ogni articolo (_includes/contenuto-con-banner.html -> _includes/banner-vendita.html).
+# Il prodotto mostrato e' scelto in automatico tra quelli visibili in _data/catalogo.json (cambia da articolo ad articolo).
+# Per spegnerlo in UNA pagina: nel front matter  banner_vendita: false
+# Segnaposto: {nome} = nome del prodotto. Una lingua senza voce usa l'italiano.
+it:
+  kicker: "Dal nostro atelier a Roma"
+  titolo: "Hai letto lo stile. Ora indossalo."
+  testo: "Tessuti italiani, tagli sartoriali, tagliato e cucito a Roma. Scopri il pezzo scelto per te."
+  da: "a soli"
+  cta: "Scopri il pezzo"
+  cta2: "Vedi tutta la collezione"
+en:
+  kicker: "From our Rome atelier"
+  titolo: "You read the style. Now wear it."
+  testo: "Italian fabrics, tailored cuts, cut and sewn in Rome. Discover the piece picked for you."
+  da: "only"
+  cta: "Discover the piece"
+  cta2: "See the full collection"
