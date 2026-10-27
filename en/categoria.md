@@ -6,7 +6,7 @@ classes: wide
 ref: categoria
 lang: en
 locale: en
-tr: tradotto
+tr: da_aggiornare
 tr_hash: 1bk11xf
 permalink: /en/category/
 ---
@@ -37,7 +37,7 @@ permalink: /en/category/
 }
 </style>
 
-<a class="cat-back" href="{{ '/categorie/' | relative_url }}">← All categories</a>
+{%- include blog-cat-pills.html -%}
 <div id="cat-container"><div class="cat-empty">Loading...</div></div>
 
 <script>
@@ -65,6 +65,10 @@ const SITE_POSTS = [
   const posts = SITE_POSTS.filter(p => p.categories && p.categories.includes(cat));
 
   document.title = cat + ' — Categories';
+  document.querySelectorAll('.bl-pill').forEach(a => {
+    const m = (a.getAttribute('href')||'').match(/[?&]cat=([^&]+)/);
+    a.classList.toggle('on', !!m && decodeURIComponent(m[1]) === cat);
+  });
 
   let html = `<div class="cat-header">
     <div class="cat-header-name">${cat}</div>

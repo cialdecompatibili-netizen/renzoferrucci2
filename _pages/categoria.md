@@ -33,7 +33,7 @@ classes: wide
 }
 </style>
 
-<a class="cat-back" href="{{ '/categorie/' | relative_url }}">← Tutte le categorie</a>
+{%- include blog-cat-pills.html -%}
 <div id="cat-container"><div class="cat-empty">Caricamento...</div></div>
 
 <script>
@@ -61,6 +61,10 @@ const SITE_POSTS = [
   const posts = SITE_POSTS.filter(p => p.categories && p.categories.includes(cat));
 
   document.title = cat + ' — Categorie';
+  document.querySelectorAll('.bl-pill').forEach(a => {
+    const m = (a.getAttribute('href')||'').match(/[?&]cat=([^&]+)/);
+    a.classList.toggle('on', !!m && decodeURIComponent(m[1]) === cat);
+  });
 
   let html = `<div class="cat-header">
     <div class="cat-header-name">${cat}</div>
