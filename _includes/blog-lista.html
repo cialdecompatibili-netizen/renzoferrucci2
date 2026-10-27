@@ -28,15 +28,21 @@
 @media(max-width:640px){.blog-item{flex-direction:column;gap:0}.blog-img{flex:none;width:100%;min-height:0;aspect-ratio:16/9}.blog-body{padding:.8rem 1rem 1rem}.blog-go{display:none}.blog-excerpt{-webkit-line-clamp:2}}
 </style>
 {%- assign bl_lh = '/' -%}{%- if page.lang and page.lang != site.default_lang -%}{%- assign bl_lh = '/' | append: page.lang | append: '/' -%}{%- endif -%}
-{%- assign bl_c = 'categoria/?cat=' -%}{%- if page.lang == 'en' -%}{%- assign bl_c = 'category/?cat=' -%}{%- endif -%}
-{%- include blog-cat-pills.html -%}
+{%- assign bl_c = 'blog/' -%}
+{%- if include.cat -%}
+{%- assign bl_cd = site.data.categorie | where: 'nome', include.cat | first -%}
+<style>.bl-brd{font-size:.85rem;color:var(--gc-mut,#56606b);margin:0 0 .8rem}.bl-brd a{color:inherit;text-decoration:none}.bl-brd a:hover{text-decoration:underline}.bl-cdesc{color:var(--gc-mut,#56606b);margin:0 0 1rem}</style>
+<nav class="bl-brd" aria-label="Breadcrumb"><a href="{{ bl_lh | append: 'blog/' | relative_url }}">Journal</a> &rsaquo; <span>{{ include.cat | replace: '-', ' ' | capitalize }}</span></nav>
+{%- if bl_cd.descrizione and page.lang != 'en' %}<p class="bl-cdesc">{{ bl_cd.descrizione }}</p>{% endif -%}
+{%- endif -%}
+{%- include blog-cat-pills.html attiva=include.cat -%}
 <ul class="blog-list" data-pg data-pg-item="li.blog-item" data-per="{{ site.per_page | default: 20 }}">
 {%- for post in posts_l %}
   <li class="blog-item">
     <div class="blog-img">{% if post.header.teaser %}<img src="{{ post.header.teaser | relative_url }}" alt="" loading="lazy">{% endif %}</div>
     <div class="blog-body">
       {%- if post.categories.size > 0 %}
-      <div class="blog-cats">{% for cat in post.categories limit:2 %}<a href="{{ bl_lh | append: bl_c | append: cat | relative_url }}" class="blog-cat">{{ cat }}</a>{% endfor %}</div>
+      <div class="blog-cats">{% for cat in post.categories limit:2 %}<a href="{{ bl_lh | append: bl_c | append: cat | append: '/' | relative_url }}" class="blog-cat">{{ cat }}</a>{% endfor %}</div>
       {%- endif %}
       <a href="{{ post.url | relative_url }}" class="blog-title">{{ post.title }}</a>
       <div class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</div>
