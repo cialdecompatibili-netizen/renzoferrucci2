@@ -1,7 +1,7 @@
 # Riquadro testo nella barra laterale degli articoli (sotto "Cerca"). Foto opzionale.
-# Vendita SOLO online: il testo invita a sfogliare il catalogo (bottone automatico verso lo shop).
+# Il bottone verso il catalogo e' automatico (URL giusto per lingua).
 foto: ""
-titolo: "Scegli il tuo capo online"
-testo: "Tessuti italiani, tagli sartoriali, tagliato e cucito a Roma. Vendiamo solo online: sfoglia il catalogo, scegli il pezzo che fa per te e ordina in pochi clic."
-titolo_en: "Choose your piece online"
-testo_en: "Italian fabrics, tailored cuts, cut and sewn in Rome. We sell online only: browse the catalogue, pick the piece that suits you and order in a few clicks."
+titolo: "Immagina di indossarlo già."
+testo: "Tessuti italiani, tagli sartoriali, cuciti a Roma. Il capo giusto per te esiste già: lo riconoscerai appena lo vedi."
+titolo_en: "Picture yourself already wearing it."
+testo_en: "Italian fabrics, tailored cuts, sewn in Rome. The right piece for you already exists: you will know it the moment you see it."

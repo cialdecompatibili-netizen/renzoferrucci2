@@ -4,16 +4,16 @@
 # Per spegnerlo in UNA pagina: nel front matter  banner_vendita: false
 # Segnaposto: {nome} = nome del prodotto. Una lingua senza voce usa l'italiano.
 it:
-  kicker: "Solo online, dal nostro shop"
+  kicker: "Cucito a Roma"
   titolo: "Hai letto lo stile. Ora indossalo."
-  testo: "Tessuti italiani, tagli sartoriali, tagliato e cucito a Roma. Scopri il pezzo scelto per te."
+  testo: "Tessuti italiani, tagli sartoriali, cuciti a Roma. Guarda il pezzo scelto per te e immaginati già con lui addosso."
   da: "a soli"
   cta: "Scopri il pezzo"
   cta2: "Vedi tutta la collezione"
 en:
-  kicker: "Online only, from our shop"
+  kicker: "Sewn in Rome"
   titolo: "You read the style. Now wear it."
-  testo: "Italian fabrics, tailored cuts, cut and sewn in Rome. Discover the piece picked for you."
+  testo: "Italian fabrics, tailored cuts, sewn in Rome. See the piece picked for you and picture yourself already wearing it."
   da: "only"
   cta: "Discover the piece"
   cta2: "See the full collection"

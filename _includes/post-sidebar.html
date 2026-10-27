@@ -70,7 +70,7 @@ Gli stili stanno qui dentro in <style> con !important perche' devono vincere sul
     <div class="ps-about-body">
       {%- if sb_tit != blank %}<h2>{{ sb_tit }}</h2>{% endif %}
       <p>{{ sb_txt }}</p>
-      <a class="ps-cta" href="{% include shop-url.html k='shop' %}">{% if page.lang == "en" %}Browse the catalogue{% else %}Sfoglia il catalogo{% endif %}</a>
+      <a class="ps-cta" href="{% include shop-url.html k='shop' %}">{% if page.lang == "en" %}Find your piece{% else %}Trova il tuo capo{% endif %}</a>
     </div>
   </section>
   {%- endif %}
