@@ -17,7 +17,7 @@ Gli stili stanno qui dentro in <style> con !important perche' devono vincere sul
 .has-postside .page__related .archive__item-title{grid-area:title;margin:0 !important;padding:1.1rem 1.3rem 0}
 .has-postside .page__related .page__meta{grid-area:meta;margin:0 !important;padding:.3rem 1.3rem 0}
 .has-postside .page__related .archive__item-excerpt{grid-area:exc;margin:0 !important;padding:.5rem 1.3rem 1.1rem}
-.ps{flex:0 0 300px;width:300px;position:sticky;top:5.5rem;display:flex;flex-direction:column;gap:1.1rem;font-family:'Inter',system-ui,sans-serif;color:#141414}
+.ps{flex:0 0 300px;width:300px;position:static;display:flex;flex-direction:column;gap:1.1rem;font-family:'Inter',system-ui,sans-serif;color:#141414}
 .ps *{box-sizing:border-box}
 .ps-card{background:#fff;border:1px solid #e9e3d9;border-radius:18px;padding:1.2rem 1.25rem}
 .ps-card h2{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:1.15rem;line-height:1.3;margin:0 0 .8rem;padding:0;border:0}
@@ -45,6 +45,8 @@ Gli stili stanno qui dentro in <style> con !important perche' devono vincere sul
 .ps-social li:last-child a{border-bottom:0}
 .ps-social a:hover{color:#8a6d3b}
 .ps-social i{width:1.2em;text-align:center;color:#8a6d3b}
+.ps-cta{display:inline-block;padding:.6rem 1.2rem;border-radius:999px;background:#141414;color:#fff !important;font-size:.88rem;font-weight:600;text-decoration:none;border:0}
+.ps-cta:hover{background:#8a6d3b}
 .ps a:focus-visible,.ps button:focus-visible{outline:3px solid #0e9bb5;outline-offset:3px}
 @media(max-width:960px){
 .ps{flex:0 0 100%;width:100%;position:static}
@@ -68,6 +70,7 @@ Gli stili stanno qui dentro in <style> con !important perche' devono vincere sul
     <div class="ps-about-body">
       {%- if sb_tit != blank %}<h2>{{ sb_tit }}</h2>{% endif %}
       <p>{{ sb_txt }}</p>
+      <a class="ps-cta" href="{% include shop-url.html k='shop' %}">{% if page.lang == "en" %}Browse the catalogue{% else %}Sfoglia il catalogo{% endif %}</a>
     </div>
   </section>
   {%- endif %}
