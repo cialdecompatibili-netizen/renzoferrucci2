@@ -11,7 +11,10 @@
 </style>
 <nav class="bl-pills" aria-label="Categorie">
 <a class="bl-pill{% unless include.attiva %} on{% endunless %}" href="{{ bp_lh | append: 'blog/' | relative_url }}">{% if page.lang == 'en' %}All{% else %}Tutti{% endif %}</a>
-{%- for c in site.data.categorie -%}
+{%- assign bp_news = site.data.categorie | where: 'nome', 'news' -%}
+{%- assign bp_rest = site.data.categorie | where_exp: 'c', "c.nome != 'news'" | sort_natural: 'nome' -%}
+{%- assign bp_all = bp_news | concat: bp_rest -%}
+{%- for c in bp_all -%}
 <a class="bl-pill{% if include.attiva == c.nome %} on{% endif %}" href="{{ bp_lh | append: bp_c | append: c.nome | append: '/' | relative_url }}">{{ c.nome | replace: '-', ' ' | capitalize }}</a>
 {%- endfor %}
 </nav>

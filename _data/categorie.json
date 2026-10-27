@@ -1,5 +1,9 @@
 [
   {
+    "nome": "news",
+    "descrizione": "Le ultime novita dal mondo della moda"
+  },
+  {
     "nome": "stilisti",
     "descrizione": "Le biografie dei grandi nomi della moda"
   },

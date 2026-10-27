@@ -26,6 +26,12 @@
 .blog-go{flex:0 0 auto;align-self:center;font-size:1.3rem;color:var(--gc-acc,#8a6d3b);padding:0 1rem 0 .2rem;transition:transform .2s}
 .blog-item:hover .blog-go{transform:translateX(3px)}
 @media(max-width:640px){.blog-item{flex-direction:column;gap:0}.blog-img{flex:none;width:100%;min-height:0;aspect-ratio:16/9}.blog-body{padding:.8rem 1rem 1rem}.blog-go{display:none}.blog-excerpt{-webkit-line-clamp:2}}
+.bl-az{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 1rem}
+.bl-az a,.bl-az span{min-width:2rem;text-align:center;padding:4px 6px;border:1px solid var(--gc-line,#e6e8ee);border-radius:8px;font-size:.85rem;font-weight:600;background:#fff;text-decoration:none!important}
+.bl-az a{color:var(--gc-ink,#0e1116)}.bl-az a:hover{background:var(--gc-acc,#8a6d3b);border-color:var(--gc-acc,#8a6d3b);color:#fff!important}
+.bl-az span{color:#c3c7cf;background:transparent}
+.blog-item{scroll-margin-top:5rem}
+.bl-vuoto{color:var(--gc-mut,#56606b);margin:1rem 0}
 </style>
 {%- assign bl_lh = '/' -%}{%- if page.lang and page.lang != site.default_lang -%}{%- assign bl_lh = '/' | append: page.lang | append: '/' -%}{%- endif -%}
 {%- assign bl_c = 'blog/' -%}
@@ -36,9 +42,24 @@
 {%- if bl_cd.descrizione and page.lang != 'en' %}<p class="bl-cdesc">{{ bl_cd.descrizione }}</p>{% endif -%}
 {%- endif -%}
 {%- include blog-cat-pills.html attiva=include.cat -%}
-<ul class="blog-list" data-pg data-pg-item="li.blog-item" data-per="{{ site.per_page | default: 20 }}">
+{%- assign az = false -%}
+{%- if include.cat and include.cat != 'news' -%}
+{%- assign az = true -%}
+{%- assign posts_l = posts_l | sort_natural: 'title' -%}
+{%- assign az_all = 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z' | split: ',' -%}
+{%- assign az_have = '|' -%}
+{%- for post in posts_l -%}{%- assign t1 = post.title | strip | slice: 0 | upcase -%}{%- if az_all contains t1 -%}{%- capture az_have -%}{{ az_have }}{{ t1 }}|{%- endcapture -%}{%- else -%}{%- capture az_have -%}{{ az_have }}0|{%- endcapture -%}{%- endif -%}{%- endfor -%}
+<nav class="bl-az" aria-label="A-Z">
+{%- for l in az_all -%}{%- capture k -%}|{{ l }}|{%- endcapture -%}{%- if az_have contains k -%}<a href="#lett-{{ l }}">{{ l }}</a>{%- else -%}<span>{{ l }}</span>{%- endif -%}{%- endfor -%}
+{%- if az_have contains '|0|' -%}<a href="#lett-0">#</a>{%- endif -%}
+</nav>
+{%- endif -%}
+{%- if posts_l.size == 0 -%}<p class="bl-vuoto">{% if page.lang == 'en' %}New articles coming soon.{% else %}Nuovi articoli in arrivo.{% endif %}</p>{%- endif -%}
+{%- assign az_prev = '' -%}
+<ul class="blog-list" data-pg data-pg-item="li.blog-item" data-per="{% if az %}9999{% else %}{{ site.per_page | default: 20 }}{% endif %}">
 {%- for post in posts_l %}
-  <li class="blog-item">
+  {%- if az -%}{%- assign t1 = post.title | strip | slice: 0 | upcase -%}{%- if az_all contains t1 -%}{%- assign az_cur = t1 -%}{%- else -%}{%- assign az_cur = '0' -%}{%- endif -%}{%- endif %}
+  <li class="blog-item"{% if az and az_cur != az_prev %} id="lett-{{ az_cur }}"{% assign az_prev = az_cur %}{% endif %}>
     <div class="blog-img">{% if post.header.teaser %}<img src="{{ post.header.teaser | relative_url }}" alt="" loading="lazy">{% endif %}</div>
     <div class="blog-body">
       {%- if post.categories.size > 0 %}
