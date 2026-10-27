@@ -5,9 +5,10 @@
 {%- assign bp_lh = '/' -%}{%- if page.lang and page.lang != site.default_lang -%}{%- assign bp_lh = '/' | append: page.lang | append: '/' -%}{%- endif -%}
 {%- assign bp_c = 'blog/' -%}
 <style>
-.bl-pills{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 1rem}
-.bl-pill{font-size:.85rem;padding:6px 14px;border:1px solid var(--gc-line,#e6e8ee);border-radius:999px;background:#fff;color:var(--gc-ink,#0e1116);text-decoration:none!important;transition:border-color .2s,background .2s,color .2s}
+.bl-pills{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:0 0 1.2rem}
+.bl-pill{display:flex;align-items:center;justify-content:center;text-align:center;font-size:.85rem;padding:8px 10px;line-height:1.2;border:1px solid var(--gc-line,#e6e8ee);border-radius:999px;background:#fff;color:var(--gc-ink,#0e1116);text-decoration:none!important;transition:border-color .2s,background .2s,color .2s}
 .bl-pill:hover,.bl-pill.on{border-color:var(--gc-acc,#8a6d3b);background:var(--gc-acc,#8a6d3b);color:#fff!important}
+@media(max-width:900px){.bl-pills{grid-template-columns:repeat(2,1fr)}}
 </style>
 <nav class="bl-pills" aria-label="Categorie">
 <a class="bl-pill{% unless include.attiva %} on{% endunless %}" href="{{ bp_lh | append: 'blog/' | relative_url }}">{% if page.lang == 'en' %}All{% else %}Tutti{% endif %}</a>
