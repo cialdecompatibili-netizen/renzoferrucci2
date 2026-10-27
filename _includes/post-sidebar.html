@@ -40,6 +40,11 @@ Gli stili stanno qui dentro in <style> con !important perche' devono vincere sul
 .ps-cats li:last-child a{border-bottom:0}
 .ps-cats a:hover{color:#8a6d3b}
 .ps-n{color:#9a948a;font-size:.82rem}
+.ps-social{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.1rem}
+.ps-social a{display:flex;align-items:center;gap:.7rem;padding:.5rem 0;border-bottom:1px solid #f0ebe2;font-size:.92rem;color:#141414;text-decoration:none}
+.ps-social li:last-child a{border-bottom:0}
+.ps-social a:hover{color:#8a6d3b}
+.ps-social i{width:1.2em;text-align:center;color:#8a6d3b}
 .ps a:focus-visible,.ps button:focus-visible{outline:3px solid #0e9bb5;outline-offset:3px}
 @media(max-width:960px){
 .ps{flex:0 0 100%;width:100%;position:static}
@@ -51,47 +56,30 @@ Gli stili stanno qui dentro in <style> con !important perche' devono vincere sul
 }
 </style>
 {%- assign sb = site.data.sidebar -%}
+{%- assign sb_txt = sb.testo -%}{%- assign sb_tit = sb.titolo -%}
+{%- if page.lang == "en" and sb.testo_en != blank -%}{%- assign sb_txt = sb.testo_en -%}{%- assign sb_tit = sb.titolo_en | default: sb.titolo -%}{%- endif -%}
+{%- assign au = site.author -%}
 <aside class="ps" aria-label="Barra laterale">
-  {%- if sb.foto != blank %}
+  <button type="button" class="ps-search" onclick="var t=document.querySelector('.search__toggle');if(t){t.click();}">{% if page.lang == "en" %}Search the Journal{% else %}Cerca nel Blog{% endif %} <span aria-hidden="true">&#128269;</span></button>
+
+  {%- if sb_txt != blank %}
   <section class="ps-card ps-about">
-    <img src="{{ sb.foto | relative_url }}" alt="{{ sb.titolo | escape }}" loading="lazy">
+    {%- if sb.foto != blank %}<img src="{{ sb.foto | relative_url }}" alt="{{ sb_tit | escape }}" loading="lazy">{% endif %}
     <div class="ps-about-body">
-      <h2>{{ sb.titolo }}</h2>
-      {%- if sb.testo != blank %}<p>{{ sb.testo }}</p>{% endif %}
-      <a class="ps-link" href="{{ '/azienda/' | relative_url }}">Chi siamo</a>
+      {%- if sb_tit != blank %}<h2>{{ sb_tit }}</h2>{% endif %}
+      <p>{{ sb_txt }}</p>
     </div>
   </section>
   {%- endif %}
 
-  <button type="button" class="ps-search" onclick="var t=document.querySelector('.search__toggle');if(t){t.click();}">Cerca nel Blog <span aria-hidden="true">&#128269;</span></button>
-
+  {%- if au.links and au.links.size > 0 %}
   <section class="ps-card">
-    <h2>Post recenti</h2>
-    <ul class="ps-list">
-      {%- assign shown = 0 -%}
-      {%- for p in posts_l -%}
-        {%- if p.url != page.url and shown < 5 -%}
-        <li><a class="ps-post" href="{{ p.url | relative_url }}">
-          {%- if p.header.teaser -%}<img src="{{ p.header.teaser | relative_url }}" alt="" loading="lazy">{%- else -%}<span class="ps-ph"></span>{%- endif -%}
-          <span>{{ p.title }}</span></a></li>
-        {%- assign shown = shown | plus: 1 -%}
-        {%- endif -%}
-      {%- endfor -%}
+    <h2>{% if page.lang == "en" %}Contacts{% else %}Contatti{% endif %}</h2>
+    <ul class="ps-social">
+      {%- for l in au.links %}
+      <li><a href="{{ l.url }}"{% if l.url contains 'http' %} target="_blank" rel="noopener"{% endif %}><i class="{{ l.icon }}" aria-hidden="true"></i><span>{{ l.label }}</span></a></li>
+      {%- endfor %}
     </ul>
   </section>
-
-  <section class="ps-card">
-    <h2>Rubriche</h2>
-    <ul class="ps-list ps-cats">
-      {%- for v in site.data.sottomenu.Blog -%}
-        {%- if v.url contains '/categoria/?cat=' -%}
-          {%- assign slug = v.url | split: 'cat=' | last -%}
-          {%- assign n = posts_l | where_exp: "p","p.categories contains slug" | size -%}
-          {%- if n > 0 -%}
-          <li><a href="{{ v.url | relative_url }}"><span>{{ v.title }}</span><span class="ps-n">{{ n }}</span></a></li>
-          {%- endif -%}
-        {%- endif -%}
-      {%- endfor -%}
-    </ul>
-  </section>
+  {%- endif %}
 </aside>

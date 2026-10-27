@@ -1,8 +1,6 @@
-# Riquadro "foto + presentazione" in cima alla barra laterale degli articoli.
-# Compare solo se "foto" e' compilata. Esempio:
-#   foto: /assets/images/chi-siamo.jpg
-#   titolo: "Nome Sito"
-#   testo: "Una frase che presenta il sito."
+# Riquadro testo nella barra laterale degli articoli (sotto "Cerca"). Foto opzionale.
 foto: ""
-titolo: ""
-testo: ""
+titolo: "Renzo Ferrucci"
+testo: "Tessuti italiani, tagli sartoriali, tagliato e cucito a Roma. Scrivici per un appuntamento o per scegliere insieme il tuo capo."
+titolo_en: "Renzo Ferrucci"
+testo_en: "Italian fabrics, tailored cuts, cut and sewn in Rome. Write to us for an appointment or to choose your piece together."

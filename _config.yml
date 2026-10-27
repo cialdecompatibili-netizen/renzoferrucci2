@@ -42,7 +42,24 @@ search: true
 
 # SEO globale
 author:
-  name: ""
+  name: "Renzo Ferrucci"
+  # LINK BARRA DESTRA ARTICOLI: url "#" = da mettere
+  links:
+    - label: "WhatsApp"
+      icon: "fab fa-fw fa-whatsapp"
+      url: "#"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "#"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "#"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "#"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "#"
 
 social:
   links: []
