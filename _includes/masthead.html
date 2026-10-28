@@ -88,6 +88,7 @@
             {%- comment -%} Tendina con piu' di 8 voci = LARGA su 2 colonne (niente scroll lungo). Soglia: cambia il numero 8. {%- endcomment -%}
             {%- assign wide = false -%}
             {%- if kids.size > 8 -%}{%- assign wide = true -%}{%- endif -%}
+            {%- assign duo = false -%}{%- if kids.size >= 6 and kids.size <= 8 -%}{%- assign duo = true -%}{%- endif -%}
             {%- capture dd_html -%}
               {%- if kids -%}
                 {%- for k in kids -%}
@@ -115,7 +116,7 @@
               <li class="nv__item nv__item--dd{% if wide %} nv__item--wide{% endif %}">
                 <button class="nv__link nv__link--dd" type="button" data-nv-dropdown-toggle
                         aria-haspopup="true" aria-expanded="false">{{ item.title }}</button>
-                <div class="nv__dd{% if wide %} nv__dd--wide{% endif %}">{{ dd_html }}</div>
+                <div class="nv__dd{% if wide %} nv__dd--wide{% endif %}{% if duo %} nv__dd--duo{% endif %}">{{ dd_html }}</div>
               </li>
             {%- else -%}
               <!-- VOCE SEMPLICE -->

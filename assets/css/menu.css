@@ -49,6 +49,9 @@
 .nv__dd--wide .nv__divider { column-span: all; }
 /* prima voce della tendina (es. "Tutti i servizi"): centrata, su tutta la larghezza */
 .nv__dd > .nv__dd-item:first-child { text-align: center; font-weight: 600; column-span: all; }
+/* tendina a 2 colonne pari (6-8 voci, es. Journal): griglia simmetrica, prima voce come le altre */
+.nv__item.show > .nv__dd--duo { display: grid; grid-template-columns: 1fr 1fr; min-width: 22rem; }
+.nv__dd--duo > .nv__dd-item, .nv__dd--duo > .nv__dd-item:first-child { text-align: left; font-weight: 400; white-space: normal; }
 
 /* strumenti (lente + carrello) */
 .nv__tools { display: flex; align-items: center; gap: .35rem; padding-left: .35rem; }
