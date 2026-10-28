@@ -88,7 +88,7 @@
             {%- comment -%} Tendina con piu' di 8 voci = LARGA su 2 colonne (niente scroll lungo). Soglia: cambia il numero 8. {%- endcomment -%}
             {%- assign wide = false -%}
             {%- if kids.size > 8 -%}{%- assign wide = true -%}{%- endif -%}
-            {%- assign duo = false -%}{%- if kids.size >= 6 and kids.size <= 8 -%}{%- assign duo = true -%}{%- endif -%}
+            {%- assign duo = false -%}{%- if kids.size >= 6 and kids.size <= 8 -%}{%- assign duo = true -%}{%- endif -%}{%- if item.title == 'Journal' -%}{%- assign duo = true -%}{%- endif -%}
             {%- capture dd_html -%}
               {%- if kids -%}
                 {%- for k in kids -%}
