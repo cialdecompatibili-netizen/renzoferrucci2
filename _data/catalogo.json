@@ -41,6 +41,17 @@
           "nome": "Leather shoulder bags women"
         }
       }
+    },
+    {
+      "nome": "Piccola pelletteria donna",
+      "id": "piccola-pelletteria",
+      "icona": "",
+      "genitore": "donna",
+      "tr": {
+        "en": {
+          "nome": "Small leather goods women"
+        }
+      }
     }
   ],
   "prodotti": [
