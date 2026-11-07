@@ -32,13 +32,13 @@
       }
     },
     {
-      "nome": "Borse a tracolla in pelle",
+      "nome": "Borse a tracolla in pelle donna",
       "id": "borse-a-tracolla-in-pelle",
       "icona": "",
       "genitore": "donna",
       "tr": {
         "en": {
-          "nome": "Leather shoulder bags"
+          "nome": "Leather shoulder bags women"
         }
       }
     }
