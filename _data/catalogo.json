@@ -335,26 +335,6 @@
     },
     {
       "tipo": "fisico",
-      "id": "borsa-test-a",
-      "nome": "Borsa a tracolla in pelle nera (TEST) - Variante A - sfondo bianco semplice",
-      "categoria": "accessori",
-      "prezzo_centesimi": 45000,
-      "descrizione": "Borsa a tracolla in pelle nera con patta e chiusura a giro. Prodotto di prova per confrontare le foto.",
-      "descrizione_completa": "Borsa a tracolla in pelle nera con patta e chiusura a giro.\nProdotto di prova per confrontare le due foto del sito.",
-      "immagine": "assets/images/prodotti/borsa-test-a.webp?v=1",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Test",
-      "tr": {
-        "en": {
-          "nome": "Black leather shoulder bag (TEST) - Variante A - sfondo bianco semplice",
-          "descrizione": "Black leather shoulder bag with flap and twist lock. Test product to compare photos.",
-          "descrizione_completa": "Black leather shoulder bag with flap and twist lock.\nTest product to compare the two site photos."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
       "id": "borsa-test-b",
       "nome": "Borsa a tracolla in pelle",
       "categoria": "accessori",
