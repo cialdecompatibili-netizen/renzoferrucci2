@@ -2176,9 +2176,9 @@ const NEG_PATH='_data/catalogo.json';
 async function caricaNegozio(){
   const el=document.getElementById('lista-negozio');if(!el)return;
   if(!tok()){el.innerHTML='<em style="color:#bbb;font-size:13px">Token mancante.</em>';return;}
-  let d;
-  try{const r=await ghGet(NEG_PATH);if(!r.ok)throw 0;d=JSON.parse(dec((await r.json()).content));}
-  catch(e){el.innerHTML='<em style="color:#bbb;font-size:13px">Catalogo negozio non trovato.</em>';return;}
+  let d,st='';
+  try{const r=await ghGet(NEG_PATH);st=r.status;if(!r.ok)throw 0;d=JSON.parse(dec((await r.json()).content));}
+  catch(e){el.innerHTML='<em style="color:#bbb;font-size:13px">Catalogo negozio non trovato. ['+(st||('errore: '+((e&&e.message)||e)))+' | repo: '+REPO+']</em>';return;}
   const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
   el.innerHTML=(d.prodotti||[]).map(p=>{const f=p.fonte||{};return `
     <div class="list-row" style="flex-direction:column;align-items:stretch;gap:6px">
