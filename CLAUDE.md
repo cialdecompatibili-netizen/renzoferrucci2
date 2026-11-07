@@ -96,3 +96,8 @@ Sito online: https://renzoferrucci.com (prodotti in /negozio/<id>/). Il codice s
 - 07/11/2026 sera: la variante e' scelta dal PREZZO. Select Etsy 'variation-selector-1' = taglie con prezzo (Mini 26x9x17 = 121,01; Medio 33x10x20 = 158,34; Grande 39x11x24 = 186,55). Borsa sul sito = Mini, misure gia' nella descrizione IT+EN.
 - FUTURO (non ora): scrapare anche le varianti COLORE (variation-selector-0: Nero Argento, Oro nero, Borgogna Argento, Borgogna Oro, Caffe Argento) e proporle tutte come varianti sul sito. Per ora solo MISURE della variante della foto di default.
 
+
+- 07/11/2026 notte, VARIANTI + CATEGORIE (automatici in rivendita.py):
+  * Varianti: se l'annuncio Etsy ha menu taglie/colori e NON passi --taglia/--colore, pubblica TUTTE le combinazioni (comune/varianti.py: legge i select Etsy, prezzo per misura = vendita(prezzo Etsy), catalogo.json > prodotti[].varianti, id carrello = pid__combinazione). Con --taglia/--colore pubblica come prima (variante singola). Layout: _layouts/negozio-prodotto.html (menu), _includes/negozio-riga.html (elenco: 'Scegli le opzioni'), _includes/masthead.html (voci carrello). Foto: una sola (quella di default); foto per colore = futuro (campo immagine nelle combinazioni, non ancora usato).
+  * Categorie: comune/categorie.py sceglie Reparto > Sottocategoria dal testo (es. Donna > Borse a tracolla in pelle, id borse-a-tracolla-in-pelle), la crea con pagine IT+EN se manca. Reparto uomo/donna dal testo (default donna). --categoria <id> la forza. Regole nuove tipi prodotto: REGOLE in categorie.py.
+  * Provare senza pubblicare: python rivendita.py --repo <repo> --link <url> --acquisto <prezzo> --dry-run
