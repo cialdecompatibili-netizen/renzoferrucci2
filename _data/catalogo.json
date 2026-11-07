@@ -634,6 +634,19 @@
           }
         ]
       }
+    },
+    {
+      "tipo": "fisico",
+      "id": "portapassaporto-portafoglio-da-viaggio-e-organizer",
+      "nome": "Portapassaporto/portafoglio da viaggio e organizer personalizzato in vera pelle / regalo per viaggiatori",
+      "categoria": "piccola-pelletteria",
+      "prezzo_centesimi": 13000,
+      "descrizione": "Portapassaporto/portafoglio da viaggio e organizer personalizzato in vera pelle / regalo per viaggiatori",
+      "descrizione_completa": "Portapassaporto/portafoglio da viaggio e organizer personalizzato in vera pelle / regalo per viaggiatori",
+      "immagine": "assets/images/prodotti/portapassaporto-portafoglio-da-viaggio-e-organizer.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": ""
     }
   ]
 }
