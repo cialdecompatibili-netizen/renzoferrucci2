@@ -9,8 +9,12 @@
 <p class="nz-breve">{{ include.b.tr[page.lang].descrizione | default: include.b.descrizione }}</p>
 </div>
 <div class="nz-azioni">
+{%- if include.b.varianti -%}
+<a class="btn btn-primary" href="{% include shop-url.html k="prod" id=include.b.id %}">{% if page.lang == 'en' %}Choose options{% else %}Scegli le opzioni{% endif %}</a>
+{%- else -%}
 <div class="nz-step"><button type="button" class="nz-stp" data-d="-1" aria-label="Meno">&minus;</button><input type="number" class="nz-qta" min="1" max="20" value="1" aria-label="Quantit&agrave;"><button type="button" class="nz-stp" data-d="1" aria-label="Pi&ugrave;">+</button></div>
 <button type="button" class="btn btn-primary nz-add">Aggiungi al carrello</button>
 <span class="nz-ok" aria-live="polite"></span>
+{%- endif -%}
 </div>
 </div>

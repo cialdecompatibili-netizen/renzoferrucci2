@@ -29,10 +29,16 @@ PUNTI CRITICI
 <div class="nz-pp-foto nz-pp-ph" aria-hidden="true">{{ nz_p.icona }}</div>
 {%- endif -%}
 </div>
-<div class="nz-box nz-scheda nz-pp-info" data-id="{{ nz_p.id }}" data-nome="{{ nz_p.tr[page.lang].nome | default: nz_p.nome | escape }}" data-prezzo="{{ nz_p.prezzo_centesimi | default: 0 }}" data-tipo="{{ nz_p.tipo | default: 'fisico' }}" data-periodo="">
+<div class="nz-box nz-scheda nz-pp-info" data-id="{{ nz_p.id }}" data-nome="{{ nz_p.tr[page.lang].nome | default: nz_p.nome | escape }}" data-prezzo="{{ nz_p.prezzo_centesimi | default: 0 }}" data-tipo="{{ nz_p.tipo | default: 'fisico' }}" data-periodo=""{% if nz_p.varianti %} data-var="{{ nz_p.varianti.combinazioni | jsonify | escape }}" data-base="{{ nz_p.id }}" data-basenome="{{ nz_p.tr[page.lang].nome | default: nz_p.nome | escape }}"{% endif %}>
 {% if nz_dig %}<p class="nz-pp-badge">Prodotto digitale</p>{% endif %}
 <p class="nz-prezzo nz-pp-prezzo fw-bold"></p>
 <p class="nz-pp-breve">{{ nz_p.tr[page.lang].descrizione | default: nz_p.descrizione | escape }}</p>
+{%- if nz_p.varianti -%}
+<div class="nz-vars">{%- for o in nz_p.varianti.opzioni -%}
+<label style="display:block;margin:.6rem 0 .2rem;font-weight:600">{{ o.tr[page.lang] | default: o.nome }}</label>
+<select class="nz-var" style="width:100%;max-width:26rem;padding:.5rem;margin-bottom:.4rem">{%- for v in o.valori -%}<option value="{{ v.id }}">{{ v.tr[page.lang] | default: v.nome }}</option>{%- endfor -%}</select>
+{%- endfor -%}</div>
+{%- endif -%}
 <div class="nz-pp-acq">
 <div class="nz-step"><button type="button" class="nz-stp" data-d="-1" aria-label="Meno">&minus;</button><input type="number" class="nz-qta" min="1" max="20" value="1" aria-label="Quantit&agrave;"><button type="button" class="nz-stp" data-d="1" aria-label="Pi&ugrave;">+</button></div>
 <button type="button" class="btn btn-primary nz-add">Aggiungi al carrello</button>
@@ -40,6 +46,9 @@ PUNTI CRITICI
 </div>
 </div>
 </div>
+{%- if nz_p.varianti -%}
+<script>(function(){var b=document.querySelector('.nz-pp-info[data-var]');if(!b)return;var V=JSON.parse(b.dataset.var),H=document.documentElement.lang||'it',L=H.slice(0,2),S=b.querySelectorAll('.nz-var'),F=new Intl.NumberFormat(H.replace('_','-'),{style:'currency',currency:'EUR'});function g(){var k=[].map.call(S,function(s){return s.value}).join('|'),c=V.filter(function(x){return x.v.join('|')===k})[0];if(!c)return;b.dataset.id=b.dataset.base+'__'+c.id;b.dataset.nome=b.dataset.basenome+' ('+((c.tr&&c.tr[L])||c.n)+')';b.dataset.prezzo=c.p;b.querySelector('.nz-prezzo').textContent=F.format(c.p/100)}S.forEach(function(s){s.addEventListener('change',g)});g()})();</script>
+{%- endif -%}
 <section class="nz-pp-desc"><h2>Descrizione</h2>
 {%- if nz_p.descrizione_completa and nz_p.descrizione_completa != '' -%}
 <p>{{ nz_p.tr[page.lang].descrizione_completa | default: nz_p.descrizione_completa | strip | escape | newline_to_br }}</p>
