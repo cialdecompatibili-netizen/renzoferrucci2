@@ -81,3 +81,14 @@ Lezioni dalla migrazione "pelletteria" -> "pelletteria2" (24/10/2026)
 - TEMA/COLORI: mai hex hardcoded (niente azzurri/teal/ghiaccio in menu.css, gaming.css, head/custom.html, layout): usare _data/tema.json (accent, accent_dark). Dopo il clone: cercare con grep i vecchi colori e sostituirli con la palette del nuovo sito.
 - HOME: sfondo hero = assets/images/*-hero.jpg referenziato in gaming.css (.ent-hero). Nei cloni sostituirlo con una texture a tema (esempio: automation/genera_texture.py di pelletteria2, Pillow+numpy) e cambiare logo con automation/genera_logo.py.
 - ORDINE CLONE: 1) tema.json 2) logo+texture 3) menu/categorie IT+EN 4) home/chi siamo 5) footer e segnaposto 6) commit+push+verifica online.
+
+## Rivendita Etsy -> shop (07/11/2026) - UN comando
+Sito online: https://renzoferrucci.com (prodotti in /negozio/<id>/). Il codice sta fuori dal repo, in `Desktop\libreria_comune` (come le DLL): non copiarlo qui.
+- Comando: `Desktop\rivendita etsy\pubblica.bat --repo renzoferrucci2 --link <url etsy> --acquisto <euro> --taglia <x|-> --colore <x|-> [--dry-run] [--no-push]`. Fa: scarica annuncio, foto lusso Gemini (sfondo bianco), prezzo, descrizione, commit+push, stampa URL. Prima prova SEMPRE con `--dry-run` (zero crediti Gemini).
+- Se l'annuncio ha taglie/colori e non li passi si ferma e li elenca: MAI indovinare una variante (prezzo/misure/colori dell'annuncio cambiano per variante). Chiedere a Mirco quale compra.
+- Prezzo = triplo dell'acquisto, stile LUSSO: euro interi tondi, mai ,90/,99 (fino a 100 multipli di 5, 100-500 di 10, 500-2000 di 50, oltre di 100). Funzione `comune.prezzo.vendita`.
+- Foto default = versione lusso con sfondo bianco #FFFFFF. Descrizione solo da dati reali dell'annuncio (`etsy.dettaglio`), in italiano; EN a mano.
+- Scheda prodotto: tolta la scritta "Prodotto fisico" (`_layouts/negozio-prodotto.html`, resta solo "Prodotto digitale").
+- Rimuovere un prodotto: `shop_jekyll.rimuovi(r"C:\...\renzoferrucci2", pid)` (percorso ASSOLUTO: con "." cerca in Desktop\repository e fallisce).
+- Catalogo oggi: 16 prodotti. Borsa: id `borsa-test-b` (370 EUR, foto B lusso; l'id resta cosi' per non rompere l'URL). APERTO: Mirco deve dire taglia e colore della borsa per mettere misure e ricalcolare il prezzo (acquisto 121,01 = minimo, il massimo dell'annuncio e' 186,55).
+- Dettagli di tutti i moduli e regole: `Desktop\libreria_comune\CLAUDE.md`.
