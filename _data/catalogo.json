@@ -86,6 +86,17 @@
           "nome": "Belts men"
         }
       }
+    },
+    {
+      "nome": "Zaini in pelle uomo",
+      "id": "zaini-in-pelle-uomo",
+      "icona": "",
+      "genitore": "uomo",
+      "tr": {
+        "en": {
+          "nome": "Leather backpacks men"
+        }
+      }
     }
   ],
   "prodotti": [
