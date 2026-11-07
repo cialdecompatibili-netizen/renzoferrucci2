@@ -714,6 +714,11 @@ tr:hover td{background:#f0f6fc}
           <div id="lista-prodotti"><em style="color:#bbb;font-size:13px">Caricamento...</em></div>
           <div id="prod-paginazione" style="display:flex;justify-content:center;align-items:center;gap:1em;margin-top:1em"></div>
         </div>
+        <div class="card">
+          <div class="card-title" style="display:flex;justify-content:space-between">Prodotti del negozio · fonte Etsy (privato) <button class="btn btn-secondary btn-sm" onclick="caricaNegozio()">↻ Aggiorna</button></div>
+          <div style="font-size:12px;color:#888;margin-bottom:8px">Quando un cliente compra, apri "Etsy" e ordina il prodotto. Questo URL non compare mai sul sito.</div>
+          <div id="lista-negozio"><em style="color:#bbb;font-size:13px">Caricamento...</em></div>
+        </div>
       </div>
       <!-- VISTA EDITOR -->
       <div id="prod-editor-view" style="display:none">
@@ -2164,7 +2169,47 @@ function getLimiteProdotti(){return getPerPage();}
 function setLimiteProdotti(n){setPerPage(n);}
 let _prodPaginaCorrente=1;
 
+// ===== NEGOZIO: fonte Etsy PRIVATA (per riordinare il prodotto quando lo comprano) =====
+// Sta in _data/catalogo.json > prodotti[].fonte = {url, acquisto}. Nessun layout la legge: non e' mai pubblica sul sito.
+// PUNTO CRITICO: prima di salvare si RILEGGE il file (sha fresco) cosi' non si sovrascrivono le modifiche fatte dagli script.
+const NEG_PATH='_data/catalogo.json';
+async function caricaNegozio(){
+  const el=document.getElementById('lista-negozio');if(!el)return;
+  if(!tok()){el.innerHTML='<em style="color:#bbb;font-size:13px">Token mancante.</em>';return;}
+  let d;
+  try{const r=await ghGet(NEG_PATH);if(!r.ok)throw 0;d=JSON.parse(dec((await r.json()).content));}
+  catch(e){el.innerHTML='<em style="color:#bbb;font-size:13px">Catalogo negozio non trovato.</em>';return;}
+  const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+  el.innerHTML=(d.prodotti||[]).map(p=>{const f=p.fonte||{};return `
+    <div class="list-row" style="flex-direction:column;align-items:stretch;gap:6px">
+      <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap">
+        <strong style="font-size:13px">${esc(p.nome)}</strong>
+        <span style="font-size:12px;color:#888">${Math.round(p.prezzo_centesimi/100)} € · <a href="/negozio/${esc(p.id)}/" target="_blank">scheda</a></span>
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <input type="text" id="neg-url-${esc(p.id)}" value="${esc(f.url)}" placeholder="URL prodotto Etsy (privato)" style="flex:1;min-width:220px">
+        <input type="text" id="neg-acq-${esc(p.id)}" value="${esc(f.acquisto)}" placeholder="Acquisto €" style="width:90px">
+        <button class="btn btn-primary btn-sm" onclick="salvaFonteNegozio('${esc(p.id)}')">💾 Salva</button>
+        ${f.url?`<a class="btn btn-secondary btn-sm" href="${esc(f.url)}" target="_blank" rel="noopener">Apri Etsy ↗</a>`:''}
+      </div>
+    </div>`;}).join('')||'<em style="color:#bbb;font-size:13px">Nessun prodotto.</em>';
+}
+async function salvaFonteNegozio(pid){
+  const url=document.getElementById('neg-url-'+pid).value.trim();
+  const acq=parseFloat(document.getElementById('neg-acq-'+pid).value.trim().replace(',','.'));
+  try{
+    const r=await ghGet(NEG_PATH);const j=await r.json();
+    const d=JSON.parse(dec(j.content));
+    const p=(d.prodotti||[]).find(x=>x.id===pid);if(!p){alert('Prodotto non trovato');return;}
+    if(url||!isNaN(acq))p.fonte={url:url,acquisto:isNaN(acq)?'':acq};else delete p.fonte;
+    const ok=await ghPut(NEG_PATH,'Admin: fonte Etsy '+pid,JSON.stringify(d,null,2)+'\n',j.sha);
+    if(!ok.ok)throw 0;
+    caricaNegozio();
+  }catch(e){alert('❌ Errore nel salvataggio della fonte Etsy');}
+}
+
 async function caricaProdotti(){
+  caricaNegozio();
   const el=document.getElementById('lista-prodotti');
   if(!tok()){el.innerHTML='<em style="color:#bbb;font-size:13px">Token mancante.</em>';return;}
   const cached=JSON.parse(localStorage.getItem('cms_cache_prodotti')||'null');

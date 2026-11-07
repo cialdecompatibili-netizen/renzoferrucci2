@@ -302,66 +302,6 @@
     },
     {
       "tipo": "fisico",
-      "id": "nettuno",
-      "nome": "Tevere – Foulard in twill di seta blu",
-      "categoria": "accessori-donna",
-      "prezzo_centesimi": 29000,
-      "descrizione": "Collezione Nettuno · Onde di blu profondo: foulard in twill di seta, bordi rullati a mano. Made in Rome.",
-      "descrizione_completa": "Collezione Nettuno.\nFoulard 90x90 in twill di seta stampato a mano, bordi rullati. Un accessorio che cambia ogni look.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
-      "immagine": "assets/images/prodotti/nettuno.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Nettuno",
-      "tr": {
-        "en": {
-          "nome": "Tevere – Blue silk twill scarf",
-          "descrizione": "Nettuno Collection · Waves of deep blue: silk twill scarf, hand-rolled edges. Made in Rome.",
-          "descrizione_completa": "Nettuno Collection.\n90x90 scarf in hand-printed silk twill, rolled edges. An accessory that changes every look.\nCut and sewn in Rome: Roman tailoring meets a contemporary, clean, timeless line."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
-      "id": "plutone",
-      "nome": "Capitolino – Borsa in pelle pieno fiore",
-      "categoria": "accessori-donna",
-      "prezzo_centesimi": 235000,
-      "descrizione": "Collezione Vulcano · Nera come l'oltretomba, preziosa come un tesoro: borsa strutturata in pelle. Made in Rome.",
-      "descrizione_completa": "Collezione Vulcano.\nBorsa a mano in pelle di vitello pieno fiore, chiusura in metallo satinato, interno in camoscio. Pochi pezzi, numerati.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
-      "immagine": "assets/images/prodotti/plutone.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Vulcano",
-      "tr": {
-        "en": {
-          "nome": "Capitolino – Full-grain leather handbag",
-          "descrizione": "Vulcano Collection · Black as the underworld, precious as a treasure: structured leather bag. Made in Rome.",
-          "descrizione_completa": "Vulcano Collection.\nHandbag in full-grain calf leather, satin metal clasp, suede interior. Few pieces, numbered.\nCut and sewn in Rome: Roman tailoring meets a contemporary, clean, timeless line."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
-      "id": "luna",
-      "nome": "Pantheon – Pochette in satin di seta",
-      "categoria": "accessori-donna",
-      "prezzo_centesimi": 98000,
-      "descrizione": "Collezione Nettuno · Piccola luna d'argento: pochette in satin con chiusura gioiello. Made in Rome.",
-      "descrizione_completa": "Collezione Nettuno.\nPochette in satin di seta con chiusura gioiello a forma di mezzaluna, catenina rimovibile. La sera in una mano.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
-      "immagine": "assets/images/prodotti/luna.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Nettuno",
-      "tr": {
-        "en": {
-          "nome": "Pantheon – Silk satin clutch",
-          "descrizione": "Nettuno Collection · A little silver moon: satin clutch with jewel clasp. Made in Rome.",
-          "descrizione_completa": "Nettuno Collection.\nClutch in silk satin with a crescent-moon jewel clasp, removable chain. The evening in one hand.\nCut and sewn in Rome: Roman tailoring meets a contemporary, clean, timeless line."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
       "id": "urano",
       "nome": "Ripetta – Occhiali da sole in acetato",
       "categoria": "accessori-uomo",
@@ -678,6 +618,10 @@
             }
           }
         ]
+      },
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/4577740617/borsa-shopper-grande-in-vera-pelle-donna",
+        "acquisto": 121.01
       }
     },
     {
@@ -692,7 +636,11 @@
       "icona": "",
       "visibile": true,
       "collezione": "",
-      "categoria2": "portapassaporti-in-pelle-uomo"
+      "categoria2": "portapassaporti-in-pelle-uomo",
+      "fonte": {
+        "url": "https://www.etsy.com/listing/1863311721",
+        "acquisto": 42.78
+      }
     },
     {
       "tipo": "fisico",
@@ -705,7 +653,11 @@
       "immagine": "assets/images/prodotti/portafoglio-in-pelle.webp?v=3",
       "icona": "",
       "visibile": true,
-      "collezione": ""
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/1655441141/portafoglio-da-donna-in-morbida-pelle",
+        "acquisto": 68.77
+      }
     }
   ]
 }
