@@ -102,26 +102,6 @@
   "prodotti": [
     {
       "tipo": "fisico",
-      "id": "apollo",
-      "nome": "Pincio – Polo in seta e cotone",
-      "categoria": "uomo",
-      "prezzo_centesimi": 46000,
-      "descrizione": "Collezione Giove · Luce dorata e trama fine: polo a maniche corte in seta e cotone. Made in Rome.",
-      "descrizione_completa": "Collezione Giove.\nPolo in maglia di seta e cotone extra-fine, bordi a costine, finitura satinata. Per le giornate di sole, dentro e fuori città.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
-      "immagine": "assets/images/prodotti/apollo.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Giove",
-      "tr": {
-        "en": {
-          "nome": "Pincio – Silk and cotton polo",
-          "descrizione": "Giove Collection · Golden light and fine texture: short-sleeved polo in silk and cotton. Made in Rome.",
-          "descrizione_completa": "Giove Collection.\nPolo in extra-fine silk and cotton knit, ribbed edges, satin finish. For sunny days, in and out of town.\nCut and sewn in Rome: Roman tailoring meets a contemporary, clean, timeless line."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
       "id": "venere",
       "nome": "Trastevere – Abito midi in seta",
       "categoria": "donna",
