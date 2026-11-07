@@ -92,3 +92,7 @@ Sito online: https://renzoferrucci.com (prodotti in /negozio/<id>/). Il codice s
 - Rimuovere un prodotto: `shop_jekyll.rimuovi(r"C:\...\renzoferrucci2", pid)` (percorso ASSOLUTO: con "." cerca in Desktop\repository e fallisce).
 - Catalogo oggi: 16 prodotti. Borsa: id `borsa-test-b` (370 EUR, foto B lusso; l'id resta cosi' per non rompere l'URL). APERTO: Mirco deve dire taglia e colore della borsa per mettere misure e ricalcolare il prezzo (acquisto 121,01 = minimo, il massimo dell'annuncio e' 186,55).
 - Dettagli di tutti i moduli e regole: `Desktop\libreria_comune\CLAUDE.md`.
+
+- 07/11/2026 sera: la variante e' scelta dal PREZZO. Select Etsy 'variation-selector-1' = taglie con prezzo (Mini 26x9x17 = 121,01; Medio 33x10x20 = 158,34; Grande 39x11x24 = 186,55). Borsa sul sito = Mini, misure gia' nella descrizione IT+EN.
+- FUTURO (non ora): scrapare anche le varianti COLORE (variation-selector-0: Nero Argento, Oro nero, Borgogna Argento, Borgogna Oro, Caffe Argento) e proporle tutte come varianti sul sito. Per ora solo MISURE della variante della foto di default.
+
