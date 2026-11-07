@@ -86,6 +86,17 @@
           "nome": "Leather Passport holders women"
         }
       }
+    },
+    {
+      "nome": "Portapassaporti in pelle uomo",
+      "id": "portapassaporti-in-pelle-uomo",
+      "icona": "",
+      "genitore": "uomo",
+      "tr": {
+        "en": {
+          "nome": "Leather Passport holders men"
+        }
+      }
     }
   ],
   "prodotti": [
