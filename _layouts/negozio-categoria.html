@@ -43,7 +43,7 @@ Le classi nz-* e i testi italiani dentro elementi nz-* sono tradotti da shop-i18
 {%- endfor %}
 </div>
 {%- endif %}
-{%- assign nz_lista = site.data.catalogo.prodotti | where_exp: 'x', 'nz_ids_a contains x.categoria' | where_exp: 'x', 'x.visibile != false' -%}
+{%- assign nz_lista = site.data.catalogo.prodotti | where_exp: 'x', 'nz_ids_a contains x.categoria or nz_ids_a contains x.categoria2' | where_exp: 'x', 'x.visibile != false' -%}
 {%- if nz_lista.size == 0 -%}
 {%- capture nz_u_cont -%}{% include url-ref.html ref="contatti" %}{%- endcapture -%}
 <p class="nz-cnt nz-vuota">Gli articoli di questa categoria arrivano presto. <a href="{{ nz_u_cont }}">Scrivici cosa cerchi.</a></p>
