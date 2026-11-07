@@ -1024,7 +1024,7 @@ function toggleToken(){const i=document.getElementById('token-input');i.type=i.t
 // ⚠️ CRITICO: enc() e dec() usano unescape/escape per gestire UTF-8 in btoa/atob.
 // NON usare btoa(string) diretto — crasha su caratteri italiani (àèìòù) e emoji.
 // Formula corretta: btoa(unescape(encodeURIComponent(s))) e inverso per dec().
-function tok(){return localStorage.getItem('gh_token');}
+function tok(){const t=localStorage.getItem('gh_token');return t?t.replace(/[^\x21-\x7E]/g,''):t;} // toglie spazi/caratteri invisibili incollati col token (fanno lanciare fetch: 'Errore di rete')
 function enc(s){return btoa(unescape(encodeURIComponent(s)));}
 function dec(s){return decodeURIComponent(escape(atob(s.replace(/\n/g,''))));}
 function showMsg(id,txt,cls){const m=document.getElementById(id);m.textContent=txt;m.className='msg '+cls;}
