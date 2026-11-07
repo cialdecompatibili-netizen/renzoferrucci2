@@ -22,16 +22,6 @@
       }
     },
     {
-      "nome": "Accessori",
-      "id": "accessori",
-      "icona": "",
-      "tr": {
-        "en": {
-          "nome": "Accessories"
-        }
-      }
-    },
-    {
       "nome": "Borse a tracolla in pelle donna",
       "id": "borse-a-tracolla-in-pelle",
       "icona": "",
@@ -50,6 +40,28 @@
       "tr": {
         "en": {
           "nome": "Small leather goods women"
+        }
+      }
+    },
+    {
+      "nome": "Accessori donna",
+      "id": "accessori-donna",
+      "icona": "",
+      "genitore": "donna",
+      "tr": {
+        "en": {
+          "nome": "Accessories women"
+        }
+      }
+    },
+    {
+      "nome": "Accessori uomo",
+      "id": "accessori-uomo",
+      "icona": "",
+      "genitore": "uomo",
+      "tr": {
+        "en": {
+          "nome": "Accessories men"
         }
       }
     }
@@ -259,7 +271,7 @@
       "tipo": "fisico",
       "id": "nettuno",
       "nome": "Tevere – Foulard in twill di seta blu",
-      "categoria": "accessori",
+      "categoria": "accessori-donna",
       "prezzo_centesimi": 29000,
       "descrizione": "Collezione Nettuno · Onde di blu profondo: foulard in twill di seta, bordi rullati a mano. Made in Rome.",
       "descrizione_completa": "Collezione Nettuno.\nFoulard 90x90 in twill di seta stampato a mano, bordi rullati. Un accessorio che cambia ogni look.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
@@ -279,7 +291,7 @@
       "tipo": "fisico",
       "id": "plutone",
       "nome": "Capitolino – Borsa in pelle pieno fiore",
-      "categoria": "accessori",
+      "categoria": "accessori-donna",
       "prezzo_centesimi": 235000,
       "descrizione": "Collezione Vulcano · Nera come l'oltretomba, preziosa come un tesoro: borsa strutturata in pelle. Made in Rome.",
       "descrizione_completa": "Collezione Vulcano.\nBorsa a mano in pelle di vitello pieno fiore, chiusura in metallo satinato, interno in camoscio. Pochi pezzi, numerati.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
@@ -299,7 +311,7 @@
       "tipo": "fisico",
       "id": "luna",
       "nome": "Pantheon – Pochette in satin di seta",
-      "categoria": "accessori",
+      "categoria": "accessori-donna",
       "prezzo_centesimi": 98000,
       "descrizione": "Collezione Nettuno · Piccola luna d'argento: pochette in satin con chiusura gioiello. Made in Rome.",
       "descrizione_completa": "Collezione Nettuno.\nPochette in satin di seta con chiusura gioiello a forma di mezzaluna, catenina rimovibile. La sera in una mano.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
@@ -319,7 +331,7 @@
       "tipo": "fisico",
       "id": "urano",
       "nome": "Ripetta – Occhiali da sole in acetato",
-      "categoria": "accessori",
+      "categoria": "accessori-uomo",
       "prezzo_centesimi": 54000,
       "descrizione": "Collezione Nettuno · Montatura in acetato italiano, lenti azzurro cielo: visione limpida. Made in Rome.",
       "descrizione_completa": "Collezione Nettuno.\nOcchiali da sole in acetato italiano fatto a mano, lenti polarizzate con protezione UV400. Fatti per durare.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
@@ -339,7 +351,7 @@
       "tipo": "fisico",
       "id": "vulcano",
       "nome": "Sallustiano – Cintura in cuoio vegetale",
-      "categoria": "accessori",
+      "categoria": "accessori-uomo",
       "prezzo_centesimi": 38000,
       "descrizione": "Collezione Vulcano · Cuoio vegetale conciato in Toscana, fibbia in ottone fuso. Made in Rome.",
       "descrizione_completa": "Collezione Vulcano.\nCintura in cuoio conciato al vegetale, fibbia in ottone fuso a mano, cuciture a vista. Migliora con gli anni.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
