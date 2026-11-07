@@ -102,26 +102,6 @@
   "prodotti": [
     {
       "tipo": "fisico",
-      "id": "mercurio",
-      "nome": "Monti – Sneaker in pelle di vitello",
-      "categoria": "uomo",
-      "prezzo_centesimi": 69000,
-      "descrizione": "Collezione Vulcano · Leggera e veloce come il messaggero degli dei: pelle di vitello, suola in gomma. Made in Rome.",
-      "descrizione_completa": "Collezione Vulcano.\nSneaker low-top in pelle di vitello morbida, suola in gomma cucita a mano, interno in pelle. Pensata per muoversi veloce, con stile.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
-      "immagine": "assets/images/prodotti/mercurio.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Vulcano",
-      "tr": {
-        "en": {
-          "nome": "Monti – Calf leather sneakers",
-          "descrizione": "Vulcano Collection · Light and fast like the messenger of the gods: calf leather, rubber sole. Made in Rome.",
-          "descrizione_completa": "Vulcano Collection.\nLow-top sneaker in soft calf leather, hand-stitched rubber sole, leather interior. Designed to move fast, with style.\nCut and sewn in Rome: Roman tailoring meets a contemporary, clean, timeless line."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
       "id": "saturno",
       "nome": "Flaminia – Cappotto lungo in lana double-face",
       "categoria": "uomo",
