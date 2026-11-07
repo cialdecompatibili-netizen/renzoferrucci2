@@ -30,6 +30,17 @@
           "nome": "Accessories"
         }
       }
+    },
+    {
+      "nome": "Borse a tracolla in pelle",
+      "id": "borse-a-tracolla-in-pelle",
+      "icona": "",
+      "genitore": "donna",
+      "tr": {
+        "en": {
+          "nome": "Leather shoulder bags"
+        }
+      }
     }
   ],
   "prodotti": [
