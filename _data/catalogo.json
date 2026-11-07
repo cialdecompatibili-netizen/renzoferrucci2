@@ -64,6 +64,17 @@
           "nome": "Accessories men"
         }
       }
+    },
+    {
+      "nome": "Portafogli in pelle donna",
+      "id": "portafogli-in-pelle",
+      "icona": "",
+      "genitore": "donna",
+      "tr": {
+        "en": {
+          "nome": "Leather Wallets women"
+        }
+      }
     }
   ],
   "prodotti": [
