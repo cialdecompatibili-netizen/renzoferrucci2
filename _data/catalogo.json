@@ -202,26 +202,6 @@
     },
     {
       "tipo": "fisico",
-      "id": "urano",
-      "nome": "Ripetta – Occhiali da sole in acetato",
-      "categoria": "accessori-uomo",
-      "prezzo_centesimi": 54000,
-      "descrizione": "Collezione Nettuno · Montatura in acetato italiano, lenti azzurro cielo: visione limpida. Made in Rome.",
-      "descrizione_completa": "Collezione Nettuno.\nOcchiali da sole in acetato italiano fatto a mano, lenti polarizzate con protezione UV400. Fatti per durare.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
-      "immagine": "assets/images/prodotti/urano.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Nettuno",
-      "tr": {
-        "en": {
-          "nome": "Ripetta – Acetate sunglasses",
-          "descrizione": "Nettuno Collection · Italian acetate frame, sky-blue lenses: clear vision. Made in Rome.",
-          "descrizione_completa": "Nettuno Collection.\nSunglasses in handmade Italian acetate, polarised lenses with UV400 protection. Made to last.\nCut and sewn in Rome: Roman tailoring meets a contemporary, clean, timeless line."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
       "id": "vulcano",
       "nome": "Sallustiano – Cintura in cuoio vegetale",
       "categoria": "accessori-uomo",
