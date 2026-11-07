@@ -349,60 +349,60 @@
         "en": {
           "nome": "Leather shoulder bag",
           "descrizione": "Shoulder bag in genuine bovine leather with natural grain, flap and metal twist lock.",
-          "descrizione_completa": "Shoulder bag in genuine bovine leather with a natural pebbled grain: soft, structured and scratch-resistant.\nFlap with metal twist-lock clasp.\nDouble shoulder straps.\nEco-leather lined interior with a slip pocket and an inner flap with snap closure.\nAvailable sizes (length × width × height): Mini 26 × 9 × 17 cm, Medio 33 × 10 × 20 cm, Grande 39 × 11 × 24 cm. Approximate sizes.\nCare: keep away from water and perfumes, wipe with a dry cloth and store in a dry place. As a natural leather, small variations in grain and tone are part of the material."
+          "descrizione_completa": "Shoulder bag in genuine bovine leather with a natural pebbled grain: soft, structured and scratch-resistant.\nFlap with metal twist-lock clasp.\nDouble shoulder straps.\nEco-leather lined interior with a slip pocket and an inner flap with snap closure.\nAvailable sizes (length × width × height): Mini 26 × 9 × 17 cm, Medio 33 × 10 × 20 cm, Grande 39 × 11 × 24 cm. Approximate sizes.\nAvailable sizes (length × width × height): Mini 26 × 9 × 17 cm, Medio 33 × 10 × 20 cm, Grande 39 × 11 × 24 cm. Approximate sizes.\nCare: keep away from water and perfumes, wipe with a dry cloth and store in a dry place. As a natural leather, small variations in grain and tone are part of the material."
         }
       },
       "varianti": {
         "opzioni": [
           {
-            "id": "colore-primario",
-            "nome": "Colore primario",
+            "id": "colore",
+            "nome": "Colore",
             "tr": {
-              "en": "Colore primario"
+              "en": "Color"
             },
             "valori": [
               {
                 "id": "nero-argento",
                 "nome": "Nero, Argento",
                 "tr": {
-                  "en": "Nero, Argento"
+                  "en": "Black, Silver"
                 }
               },
               {
                 "id": "oro-nero",
                 "nome": "Oro nero",
                 "tr": {
-                  "en": "Oro nero"
+                  "en": "Black, Gold"
                 }
               },
               {
                 "id": "borgogna-argento",
                 "nome": "Borgogna, Argento",
                 "tr": {
-                  "en": "Borgogna, Argento"
+                  "en": "Burgundy, Silver"
                 }
               },
               {
                 "id": "borgogna-oro",
                 "nome": "Borgogna, Oro",
                 "tr": {
-                  "en": "Borgogna, Oro"
+                  "en": "Burgundy, Gold"
                 }
               },
               {
                 "id": "caffe-argento",
                 "nome": "Caffè, Argento",
                 "tr": {
-                  "en": "Caffè, Argento"
+                  "en": "Coffee, Silver"
                 }
               }
             ]
           },
           {
-            "id": "misurare",
-            "nome": "misurare",
+            "id": "misura",
+            "nome": "Misura",
             "tr": {
-              "en": "misurare"
+              "en": "Size"
             },
             "valori": [
               {
@@ -439,7 +439,7 @@
             "p": 37000,
             "n": "Nero, Argento, Mini · 26 × 9 × 17 cm",
             "tr": {
-              "en": "Nero, Argento, Mini · 26 × 9 × 17 cm"
+              "en": "Black, Silver, Mini · 26 × 9 × 17 cm"
             }
           },
           {
@@ -451,7 +451,7 @@
             "p": 48000,
             "n": "Nero, Argento, Medio · 33 × 10 × 20 cm",
             "tr": {
-              "en": "Nero, Argento, Medio · 33 × 10 × 20 cm"
+              "en": "Black, Silver, Medio · 33 × 10 × 20 cm"
             }
           },
           {
@@ -463,7 +463,7 @@
             "p": 60000,
             "n": "Nero, Argento, Grande · 39 × 11 × 24 cm",
             "tr": {
-              "en": "Nero, Argento, Grande · 39 × 11 × 24 cm"
+              "en": "Black, Silver, Grande · 39 × 11 × 24 cm"
             }
           },
           {
@@ -475,7 +475,7 @@
             "p": 37000,
             "n": "Oro nero, Mini · 26 × 9 × 17 cm",
             "tr": {
-              "en": "Oro nero, Mini · 26 × 9 × 17 cm"
+              "en": "Black, Gold, Mini · 26 × 9 × 17 cm"
             }
           },
           {
@@ -487,7 +487,7 @@
             "p": 48000,
             "n": "Oro nero, Medio · 33 × 10 × 20 cm",
             "tr": {
-              "en": "Oro nero, Medio · 33 × 10 × 20 cm"
+              "en": "Black, Gold, Medio · 33 × 10 × 20 cm"
             }
           },
           {
@@ -499,7 +499,7 @@
             "p": 60000,
             "n": "Oro nero, Grande · 39 × 11 × 24 cm",
             "tr": {
-              "en": "Oro nero, Grande · 39 × 11 × 24 cm"
+              "en": "Black, Gold, Grande · 39 × 11 × 24 cm"
             }
           },
           {
@@ -511,7 +511,7 @@
             "p": 37000,
             "n": "Borgogna, Argento, Mini · 26 × 9 × 17 cm",
             "tr": {
-              "en": "Borgogna, Argento, Mini · 26 × 9 × 17 cm"
+              "en": "Burgundy, Silver, Mini · 26 × 9 × 17 cm"
             }
           },
           {
@@ -523,7 +523,7 @@
             "p": 48000,
             "n": "Borgogna, Argento, Medio · 33 × 10 × 20 cm",
             "tr": {
-              "en": "Borgogna, Argento, Medio · 33 × 10 × 20 cm"
+              "en": "Burgundy, Silver, Medio · 33 × 10 × 20 cm"
             }
           },
           {
@@ -535,7 +535,7 @@
             "p": 60000,
             "n": "Borgogna, Argento, Grande · 39 × 11 × 24 cm",
             "tr": {
-              "en": "Borgogna, Argento, Grande · 39 × 11 × 24 cm"
+              "en": "Burgundy, Silver, Grande · 39 × 11 × 24 cm"
             }
           },
           {
@@ -547,7 +547,7 @@
             "p": 37000,
             "n": "Borgogna, Oro, Mini · 26 × 9 × 17 cm",
             "tr": {
-              "en": "Borgogna, Oro, Mini · 26 × 9 × 17 cm"
+              "en": "Burgundy, Gold, Mini · 26 × 9 × 17 cm"
             }
           },
           {
@@ -559,7 +559,7 @@
             "p": 48000,
             "n": "Borgogna, Oro, Medio · 33 × 10 × 20 cm",
             "tr": {
-              "en": "Borgogna, Oro, Medio · 33 × 10 × 20 cm"
+              "en": "Burgundy, Gold, Medio · 33 × 10 × 20 cm"
             }
           },
           {
@@ -571,7 +571,7 @@
             "p": 60000,
             "n": "Borgogna, Oro, Grande · 39 × 11 × 24 cm",
             "tr": {
-              "en": "Borgogna, Oro, Grande · 39 × 11 × 24 cm"
+              "en": "Burgundy, Gold, Grande · 39 × 11 × 24 cm"
             }
           },
           {
@@ -583,7 +583,7 @@
             "p": 37000,
             "n": "Caffè, Argento, Mini · 26 × 9 × 17 cm",
             "tr": {
-              "en": "Caffè, Argento, Mini · 26 × 9 × 17 cm"
+              "en": "Coffee, Silver, Mini · 26 × 9 × 17 cm"
             }
           },
           {
@@ -595,7 +595,7 @@
             "p": 48000,
             "n": "Caffè, Argento, Medio · 33 × 10 × 20 cm",
             "tr": {
-              "en": "Caffè, Argento, Medio · 33 × 10 × 20 cm"
+              "en": "Coffee, Silver, Medio · 33 × 10 × 20 cm"
             }
           },
           {
@@ -607,7 +607,7 @@
             "p": 60000,
             "n": "Caffè, Argento, Grande · 39 × 11 × 24 cm",
             "tr": {
-              "en": "Caffè, Argento, Grande · 39 × 11 × 24 cm"
+              "en": "Coffee, Silver, Grande · 39 × 11 × 24 cm"
             }
           }
         ]
