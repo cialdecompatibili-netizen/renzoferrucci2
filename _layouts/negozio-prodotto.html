@@ -30,7 +30,7 @@ PUNTI CRITICI
 {%- endif -%}
 </div>
 <div class="nz-box nz-scheda nz-pp-info" data-id="{{ nz_p.id }}" data-nome="{{ nz_p.tr[page.lang].nome | default: nz_p.nome | escape }}" data-prezzo="{{ nz_p.prezzo_centesimi | default: 0 }}" data-tipo="{{ nz_p.tipo | default: 'fisico' }}" data-periodo="">
-<p class="nz-pp-badge">{% if nz_dig %}Prodotto digitale{% else %}Prodotto fisico{% endif %}</p>
+{% if nz_dig %}<p class="nz-pp-badge">Prodotto digitale</p>{% endif %}
 <p class="nz-prezzo nz-pp-prezzo fw-bold"></p>
 <p class="nz-pp-breve">{{ nz_p.tr[page.lang].descrizione | default: nz_p.descrizione | escape }}</p>
 <div class="nz-pp-acq">
