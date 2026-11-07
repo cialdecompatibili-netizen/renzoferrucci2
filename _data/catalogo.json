@@ -102,26 +102,6 @@
   "prodotti": [
     {
       "tipo": "fisico",
-      "id": "giove",
-      "nome": "Aventino – Giacca doppiopetto in cashmere",
-      "categoria": "uomo",
-      "prezzo_centesimi": 249000,
-      "descrizione": "Collezione Giove · Il re degli dei in una giacca doppiopetto: cashmere e seta, linea scolpita. Made in Rome.",
-      "descrizione_completa": "Collezione Giove.\nGiacca doppiopetto in cashmere e seta, spalla morbida e fodera in bemberg. Tagliata a mano in Italia, bottoni in corno. Una presenza autorevole, mai ostentata.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
-      "immagine": "assets/images/prodotti/giove.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Giove",
-      "tr": {
-        "en": {
-          "nome": "Aventino – Double-breasted cashmere jacket",
-          "descrizione": "Giove Collection · The king of the gods in a double-breasted jacket: cashmere and silk, sculpted line. Made in Rome.",
-          "descrizione_completa": "Giove Collection.\nDouble-breasted jacket in cashmere and silk, soft shoulder and bemberg lining. Hand-cut in Italy, horn buttons. An authoritative presence, never ostentatious.\nCut and sewn in Rome: Roman tailoring meets a contemporary, clean, timeless line."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
       "id": "marte",
       "nome": "Testaccio – Camicia in lino sabbia",
       "categoria": "uomo",
