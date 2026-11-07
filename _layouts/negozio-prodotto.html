@@ -29,7 +29,7 @@ PUNTI CRITICI
 <div class="nz-pp-foto nz-pp-ph" aria-hidden="true">{{ nz_p.icona }}</div>
 {%- endif -%}
 </div>
-<div class="nz-box nz-scheda nz-pp-info" data-id="{{ nz_p.id }}" data-nome="{{ nz_p.tr[page.lang].nome | default: nz_p.nome | escape }}" data-prezzo="{{ nz_p.prezzo_centesimi | default: 0 }}" data-tipo="{{ nz_p.tipo | default: 'fisico' }}" data-periodo=""{% if nz_p.varianti %} data-var="{{ nz_p.varianti.combinazioni | jsonify | escape }}" data-base="{{ nz_p.id }}" data-basenome="{{ nz_p.tr[page.lang].nome | default: nz_p.nome | escape }}"{% endif %}>
+<div class="nz-box nz-scheda nz-pp-info" data-id="{{ nz_p.id }}" data-nome="{{ nz_p.tr[page.lang].nome | default: nz_p.nome | escape }}" data-prezzo="{{ nz_p.prezzo_centesimi | default: 0 }}" data-tipo="{{ nz_p.tipo | default: 'fisico' }}" data-periodo=""{% if nz_p.varianti %} data-var="{{ nz_p.varianti.combinazioni | jsonify | escape }}" data-base="{{ nz_p.id }}" data-root="{{ '/' | relative_url }}" data-basenome="{{ nz_p.tr[page.lang].nome | default: nz_p.nome | escape }}"{% endif %}>
 {% if nz_dig %}<p class="nz-pp-badge">Prodotto digitale</p>{% endif %}
 <p class="nz-prezzo nz-pp-prezzo fw-bold"></p>
 <p class="nz-pp-breve">{{ nz_p.tr[page.lang].descrizione | default: nz_p.descrizione | escape }}</p>
@@ -47,7 +47,7 @@ PUNTI CRITICI
 </div>
 </div>
 {%- if nz_p.varianti -%}
-<script>(function(){var b=document.querySelector('.nz-pp-info[data-var]');if(!b)return;var V=JSON.parse(b.dataset.var),H=document.documentElement.lang||'it',L=H.slice(0,2),S=b.querySelectorAll('.nz-var'),F=new Intl.NumberFormat(H.replace('_','-'),{style:'currency',currency:'EUR'});function g(){var k=[].map.call(S,function(s){return s.value}).join('|'),c=V.filter(function(x){return x.v.join('|')===k})[0];if(!c)return;b.dataset.id=b.dataset.base+'__'+c.id;b.dataset.nome=b.dataset.basenome+' ('+((c.tr&&c.tr[L])||c.n)+')';b.dataset.prezzo=c.p;b.querySelector('.nz-prezzo').textContent=F.format(c.p/100)}S.forEach(function(s){s.addEventListener('change',g)});g()})();</script>
+<script>(function(){var b=document.querySelector('.nz-pp-info[data-var]');if(!b)return;var V=JSON.parse(b.dataset.var),H=document.documentElement.lang||'it',L=H.slice(0,2),S=b.querySelectorAll('.nz-var'),F=new Intl.NumberFormat(H.replace('_','-'),{style:'currency',currency:'EUR'});function g(){var k=[].map.call(S,function(s){return s.value}).join('|'),c=V.filter(function(x){return x.v.join('|')===k})[0];if(!c)return;b.dataset.id=b.dataset.base+'__'+c.id;b.dataset.nome=b.dataset.basenome+' ('+((c.tr&&c.tr[L])||c.n)+')';b.dataset.prezzo=c.p;b.querySelector('.nz-prezzo').textContent=F.format(c.p/100);var im=document.querySelector('.nz-pp-foto img');if(im){if(!im.dataset.i0)im.dataset.i0=im.getAttribute('src');im.src=c.i?b.dataset.root+c.i:im.dataset.i0}}S.forEach(function(s){s.addEventListener('change',g)});g()})();</script>
 {%- endif -%}
 <section class="nz-pp-desc"><h2>Descrizione</h2>
 {%- if nz_p.descrizione_completa and nz_p.descrizione_completa != '' -%}
