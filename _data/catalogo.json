@@ -77,17 +77,6 @@
       }
     },
     {
-      "nome": "Cinture donna",
-      "id": "cinture",
-      "icona": "",
-      "genitore": "donna",
-      "tr": {
-        "en": {
-          "nome": "Belts women"
-        }
-      }
-    },
-    {
       "nome": "Cinture uomo",
       "id": "cinture-uomo",
       "icona": "",
