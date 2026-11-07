@@ -33,17 +33,6 @@
       }
     },
     {
-      "nome": "Piccola pelletteria donna",
-      "id": "piccola-pelletteria",
-      "icona": "",
-      "genitore": "donna",
-      "tr": {
-        "en": {
-          "nome": "Small leather goods women"
-        }
-      }
-    },
-    {
       "nome": "Accessori donna",
       "id": "accessori-donna",
       "icona": "",
