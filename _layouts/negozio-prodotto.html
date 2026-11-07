@@ -56,6 +56,8 @@ PUNTI CRITICI
 <p>{{ nz_p.tr[page.lang].descrizione | default: nz_p.descrizione | escape }}</p>
 {%- endif -%}
 </section>
+<style>.nz-pp-foto img{cursor:zoom-in}.nz-lb{position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;cursor:zoom-out;padding:2vh 2vw}.nz-lb.on{display:flex}.nz-lb img{max-width:96vw;max-height:96vh;object-fit:contain;box-shadow:0 0 40px rgba(0,0,0,.5)}.nz-lb button{position:absolute;top:12px;right:16px;background:none;border:0;color:#fff;font-size:2.2rem;line-height:1;cursor:pointer}</style>
+<script>(function(){var im=document.querySelector('.nz-pp-foto img');if(!im)return;var lb=document.createElement('div');lb.className='nz-lb';lb.setAttribute('role','dialog');lb.setAttribute('aria-label','Foto ingrandita');lb.innerHTML='<button type="button" aria-label="Chiudi">&times;</button><img alt="">';document.body.appendChild(lb);var big=lb.querySelector('img');function open(){big.src=im.currentSrc||im.src;big.alt=im.alt;lb.classList.add('on');document.body.style.overflow='hidden'}function close(){lb.classList.remove('on');document.body.style.overflow=''}im.addEventListener('click',open);lb.addEventListener('click',close);document.addEventListener('keydown',function(e){if(e.key==='Escape')close()})})();</script>
 <p class="nz-pp-torna"><a href="{% include shop-url.html k="shop" %}">&larr; Torna al negozio</a> &middot; <a href="{{ nz_lh | append: 'carrello/' | relative_url }}">Vai al carrello</a></p>
 </div>
 {%- endif -%}

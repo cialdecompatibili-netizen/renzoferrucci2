@@ -118,3 +118,5 @@ Sito online: https://renzoferrucci.com (prodotti in /negozio/<id>/). Il codice s
 - 07/11/2026 notte: portapassaporto-in-pelle portato in fase 2 (foto lusso Gemini, sfondo bianco), commit 08acd78.
 
 - 07/11/2026 notte: categoria 'Accessori' ELIMINATA e divisa in Accessori donna (accessori-donna: foulard, borsa, pochette) e Accessori uomo (accessori-uomo: occhiali, cintura), figlie di Donna e Uomo. In categorie.py il tipo 'Accessori' ora va sempre in accessori-<reparto>. Vecchio URL /negozio/categoria/accessori/ rimosso. Commit 27358ec.
+
+- 07/11/2026 notte: zoom foto scheda prodotto (lightbox) in _layouts\negozio-prodotto.html: click sulla foto = overlay a schermo intero, chiude con click o Esc; segue la foto del colore scelto. Se si cambia il layout in altri repo copiare lo stesso blocco (style+script prima di nz-pp-torna).
