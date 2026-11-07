@@ -102,26 +102,6 @@
   "prodotti": [
     {
       "tipo": "fisico",
-      "id": "marte",
-      "nome": "Testaccio – Camicia in lino sabbia",
-      "categoria": "uomo",
-      "prezzo_centesimi": 42000,
-      "descrizione": "Collezione Giove · Lino europeo lavato a pietra, colletto morbido, carattere deciso. Made in Rome.",
-      "descrizione_completa": "Collezione Giove.\nCamicia in puro lino europeo lavato a pietra, colletto morbido non foderato, madreperla naturale. Fresca, essenziale, sempre elegante.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
-      "immagine": "assets/images/prodotti/marte.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Giove",
-      "tr": {
-        "en": {
-          "nome": "Testaccio – Sand linen shirt",
-          "descrizione": "Giove Collection · European linen, stone-washed, soft collar, bold character. Made in Rome.",
-          "descrizione_completa": "Giove Collection.\nShirt in pure European linen, stone-washed, soft unlined collar, natural mother-of-pearl. Fresh, essential, always elegant.\nCut and sewn in Rome: Roman tailoring meets a contemporary, clean, timeless line."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
       "id": "mercurio",
       "nome": "Monti – Sneaker in pelle di vitello",
       "categoria": "uomo",
