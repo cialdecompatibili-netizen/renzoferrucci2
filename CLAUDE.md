@@ -135,3 +135,5 @@ Sito online: https://renzoferrucci.com (prodotti in /negozio/<id>/). Il codice s
 - Rimossi prodotti vecchi nettuno, plutone, luna (commit 4f8c180). Le collezioni Nettuno/Vulcano restano nel catalogo (non toccate).
 
 - 08/11/2026 REGOLA ORIGINE: lo script toglie dalle descrizioni le righe tipo 'Fatto a mano in Canada' (rivendita.py, filtro _ORIGINE). Non si scrive mai 'Made in Italy' / 'Fatto a mano in Italia' se il prodotto non e' davvero italiano: il marchio nostro stampato non cambia l'origine. Solo se il prodotto e' realmente fatto in Italia.
+
+- 08/11/2026 REGOLA NOMI (stile maison tipo Hermes): ogni prodotto prende un nome evocativo di Roma + tipo, es. 'Zaino Capitolino in pelle' (lista ROMA_NOMI in libreria_comune\rivendita.py, funzione nome_roma, mai doppioni nel catalogo). Mai nomi gia' usati da brand di lusso (Birkin, Kelly, Baguette, Speedy...): sono marchi registrati. Le categorie restano con il nome del tipo di prodotto.
