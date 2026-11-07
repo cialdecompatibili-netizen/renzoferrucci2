@@ -133,3 +133,5 @@ Sito online: https://renzoferrucci.com (prodotti in /negozio/<id>/). Il codice s
 
 - 07/11/2026 notte, FONTE ETSY PRIVATA: ogni prodotto in _data/catalogo.json ha fonte = {url Etsy, acquisto}. rivendita.py la scrive da solo (shop_jekyll.aggiungi(fonte=...)). Admin > Prodotti > card "Prodotti del negozio · fonte Etsy (privato)": campo URL, acquisto, Salva e bottone "Apri Etsy" (admin\index.html: caricaNegozio / salvaFonteNegozio, rilegge il file prima di salvare). Nessun layout la stampa sul sito. Attenzione: se la repo e' pubblica su GitHub il catalogo.json e' visibile li'. Tab admin "Prodotti" classico lavora su _products (cartella inesistente): non tocca il negozio.
 - Rimossi prodotti vecchi nettuno, plutone, luna (commit 4f8c180). Le collezioni Nettuno/Vulcano restano nel catalogo (non toccate).
+
+- 08/11/2026 REGOLA ORIGINE: lo script toglie dalle descrizioni le righe tipo 'Fatto a mano in Canada' (rivendita.py, filtro _ORIGINE). Non si scrive mai 'Made in Italy' / 'Fatto a mano in Italia' se il prodotto non e' davvero italiano: il marchio nostro stampato non cambia l'origine. Solo se il prodotto e' realmente fatto in Italia.
