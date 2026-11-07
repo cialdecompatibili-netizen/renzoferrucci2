@@ -340,7 +340,7 @@
       "categoria": "accessori",
       "prezzo_centesimi": 37000,
       "descrizione": "Borsa a tracolla in vera pelle bovina a grana naturale, con patta e fermaglio girevole in metallo.",
-      "descrizione_completa": "Borsa a tracolla in vera pelle bovina con grana naturale a ciottoli: morbida, strutturata e resistente ai graffi.\nPatta con fermaglio girevole in metallo.\nDoppi spallacci da spalla.\nInterno foderato in ecopelle, con tasca a bustina e patta interna con chiusura a pressione.\nMisure (lunghezza × larghezza × altezza): 26 × 9 × 17 cm. Misure approssimative.\nCura: tenere lontano da acqua e profumi, pulire con un panno asciutto e conservare in un luogo asciutto. Trattandosi di pelle naturale, piccole variazioni di grana e di tonalita' fanno parte del materiale.",
+      "descrizione_completa": "Borsa a tracolla in vera pelle bovina con grana naturale a ciottoli: morbida, strutturata e resistente ai graffi.\nPatta con fermaglio girevole in metallo.\nDoppi spallacci da spalla.\nInterno foderato in ecopelle, con tasca a bustina e patta interna con chiusura a pressione.\nMisure disponibili (lunghezza × larghezza × altezza): Mini 26 × 9 × 17 cm, Medio 33 × 10 × 20 cm, Grande 39 × 11 × 24 cm. Misure approssimative.\nCura: tenere lontano da acqua e profumi, pulire con un panno asciutto e conservare in un luogo asciutto. Trattandosi di pelle naturale, piccole variazioni di grana e di tonalita' fanno parte del materiale.",
       "immagine": "assets/images/prodotti/borsa-tracolla-pelle.webp?v=2",
       "icona": "",
       "visibile": true,
@@ -349,8 +349,268 @@
         "en": {
           "nome": "Leather shoulder bag",
           "descrizione": "Shoulder bag in genuine bovine leather with natural grain, flap and metal twist lock.",
-          "descrizione_completa": "Shoulder bag in genuine bovine leather with a natural pebbled grain: soft, structured and scratch-resistant.\nFlap with metal twist-lock clasp.\nDouble shoulder straps.\nEco-leather lined interior with a slip pocket and an inner flap with snap closure.\nSize (length × width × height): 26 × 9 × 17 cm (10.2 × 3.5 × 6.7 in). Approximate.\nCare: keep away from water and perfumes, wipe with a dry cloth and store in a dry place. As a natural leather, small variations in grain and tone are part of the material."
+          "descrizione_completa": "Shoulder bag in genuine bovine leather with a natural pebbled grain: soft, structured and scratch-resistant.\nFlap with metal twist-lock clasp.\nDouble shoulder straps.\nEco-leather lined interior with a slip pocket and an inner flap with snap closure.\nAvailable sizes (length × width × height): Mini 26 × 9 × 17 cm, Medio 33 × 10 × 20 cm, Grande 39 × 11 × 24 cm. Approximate sizes.\nCare: keep away from water and perfumes, wipe with a dry cloth and store in a dry place. As a natural leather, small variations in grain and tone are part of the material."
         }
+      },
+      "varianti": {
+        "opzioni": [
+          {
+            "id": "colore-primario",
+            "nome": "Colore primario",
+            "tr": {
+              "en": "Colore primario"
+            },
+            "valori": [
+              {
+                "id": "nero-argento",
+                "nome": "Nero, Argento",
+                "tr": {
+                  "en": "Nero, Argento"
+                }
+              },
+              {
+                "id": "oro-nero",
+                "nome": "Oro nero",
+                "tr": {
+                  "en": "Oro nero"
+                }
+              },
+              {
+                "id": "borgogna-argento",
+                "nome": "Borgogna, Argento",
+                "tr": {
+                  "en": "Borgogna, Argento"
+                }
+              },
+              {
+                "id": "borgogna-oro",
+                "nome": "Borgogna, Oro",
+                "tr": {
+                  "en": "Borgogna, Oro"
+                }
+              },
+              {
+                "id": "caffe-argento",
+                "nome": "Caffè, Argento",
+                "tr": {
+                  "en": "Caffè, Argento"
+                }
+              }
+            ]
+          },
+          {
+            "id": "misurare",
+            "nome": "misurare",
+            "tr": {
+              "en": "misurare"
+            },
+            "valori": [
+              {
+                "id": "mini",
+                "nome": "Mini · 26 × 9 × 17 cm",
+                "tr": {
+                  "en": "Mini · 26 × 9 × 17 cm"
+                }
+              },
+              {
+                "id": "medio",
+                "nome": "Medio · 33 × 10 × 20 cm",
+                "tr": {
+                  "en": "Medio · 33 × 10 × 20 cm"
+                }
+              },
+              {
+                "id": "grande",
+                "nome": "Grande · 39 × 11 × 24 cm",
+                "tr": {
+                  "en": "Grande · 39 × 11 × 24 cm"
+                }
+              }
+            ]
+          }
+        ],
+        "combinazioni": [
+          {
+            "id": "nero-argento-mini",
+            "v": [
+              "nero-argento",
+              "mini"
+            ],
+            "p": 37000,
+            "n": "Nero, Argento, Mini · 26 × 9 × 17 cm",
+            "tr": {
+              "en": "Nero, Argento, Mini · 26 × 9 × 17 cm"
+            }
+          },
+          {
+            "id": "nero-argento-medio",
+            "v": [
+              "nero-argento",
+              "medio"
+            ],
+            "p": 48000,
+            "n": "Nero, Argento, Medio · 33 × 10 × 20 cm",
+            "tr": {
+              "en": "Nero, Argento, Medio · 33 × 10 × 20 cm"
+            }
+          },
+          {
+            "id": "nero-argento-grande",
+            "v": [
+              "nero-argento",
+              "grande"
+            ],
+            "p": 60000,
+            "n": "Nero, Argento, Grande · 39 × 11 × 24 cm",
+            "tr": {
+              "en": "Nero, Argento, Grande · 39 × 11 × 24 cm"
+            }
+          },
+          {
+            "id": "oro-nero-mini",
+            "v": [
+              "oro-nero",
+              "mini"
+            ],
+            "p": 37000,
+            "n": "Oro nero, Mini · 26 × 9 × 17 cm",
+            "tr": {
+              "en": "Oro nero, Mini · 26 × 9 × 17 cm"
+            }
+          },
+          {
+            "id": "oro-nero-medio",
+            "v": [
+              "oro-nero",
+              "medio"
+            ],
+            "p": 48000,
+            "n": "Oro nero, Medio · 33 × 10 × 20 cm",
+            "tr": {
+              "en": "Oro nero, Medio · 33 × 10 × 20 cm"
+            }
+          },
+          {
+            "id": "oro-nero-grande",
+            "v": [
+              "oro-nero",
+              "grande"
+            ],
+            "p": 60000,
+            "n": "Oro nero, Grande · 39 × 11 × 24 cm",
+            "tr": {
+              "en": "Oro nero, Grande · 39 × 11 × 24 cm"
+            }
+          },
+          {
+            "id": "borgogna-argento-mini",
+            "v": [
+              "borgogna-argento",
+              "mini"
+            ],
+            "p": 37000,
+            "n": "Borgogna, Argento, Mini · 26 × 9 × 17 cm",
+            "tr": {
+              "en": "Borgogna, Argento, Mini · 26 × 9 × 17 cm"
+            }
+          },
+          {
+            "id": "borgogna-argento-medio",
+            "v": [
+              "borgogna-argento",
+              "medio"
+            ],
+            "p": 48000,
+            "n": "Borgogna, Argento, Medio · 33 × 10 × 20 cm",
+            "tr": {
+              "en": "Borgogna, Argento, Medio · 33 × 10 × 20 cm"
+            }
+          },
+          {
+            "id": "borgogna-argento-grande",
+            "v": [
+              "borgogna-argento",
+              "grande"
+            ],
+            "p": 60000,
+            "n": "Borgogna, Argento, Grande · 39 × 11 × 24 cm",
+            "tr": {
+              "en": "Borgogna, Argento, Grande · 39 × 11 × 24 cm"
+            }
+          },
+          {
+            "id": "borgogna-oro-mini",
+            "v": [
+              "borgogna-oro",
+              "mini"
+            ],
+            "p": 37000,
+            "n": "Borgogna, Oro, Mini · 26 × 9 × 17 cm",
+            "tr": {
+              "en": "Borgogna, Oro, Mini · 26 × 9 × 17 cm"
+            }
+          },
+          {
+            "id": "borgogna-oro-medio",
+            "v": [
+              "borgogna-oro",
+              "medio"
+            ],
+            "p": 48000,
+            "n": "Borgogna, Oro, Medio · 33 × 10 × 20 cm",
+            "tr": {
+              "en": "Borgogna, Oro, Medio · 33 × 10 × 20 cm"
+            }
+          },
+          {
+            "id": "borgogna-oro-grande",
+            "v": [
+              "borgogna-oro",
+              "grande"
+            ],
+            "p": 60000,
+            "n": "Borgogna, Oro, Grande · 39 × 11 × 24 cm",
+            "tr": {
+              "en": "Borgogna, Oro, Grande · 39 × 11 × 24 cm"
+            }
+          },
+          {
+            "id": "caffe-argento-mini",
+            "v": [
+              "caffe-argento",
+              "mini"
+            ],
+            "p": 37000,
+            "n": "Caffè, Argento, Mini · 26 × 9 × 17 cm",
+            "tr": {
+              "en": "Caffè, Argento, Mini · 26 × 9 × 17 cm"
+            }
+          },
+          {
+            "id": "caffe-argento-medio",
+            "v": [
+              "caffe-argento",
+              "medio"
+            ],
+            "p": 48000,
+            "n": "Caffè, Argento, Medio · 33 × 10 × 20 cm",
+            "tr": {
+              "en": "Caffè, Argento, Medio · 33 × 10 × 20 cm"
+            }
+          },
+          {
+            "id": "caffe-argento-grande",
+            "v": [
+              "caffe-argento",
+              "grande"
+            ],
+            "p": 60000,
+            "n": "Caffè, Argento, Grande · 39 × 11 × 24 cm",
+            "tr": {
+              "en": "Caffè, Argento, Grande · 39 × 11 × 24 cm"
+            }
+          }
+        ]
       }
     }
   ]
