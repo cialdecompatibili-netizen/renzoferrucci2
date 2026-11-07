@@ -102,26 +102,6 @@
   "prodotti": [
     {
       "tipo": "fisico",
-      "id": "saturno",
-      "nome": "Flaminia – Cappotto lungo in lana double-face",
-      "categoria": "uomo",
-      "prezzo_centesimi": 189000,
-      "descrizione": "Collezione Giove · Il cappotto lungo per l'inverno: lana vergine doppia, anello d'argento nel taglio. Made in Rome.",
-      "descrizione_completa": "Collezione Giove.\nCappotto lungo in lana vergine double-face, cuciture a mano, interno in seta. Un classico senza tempo per le stagioni fredde.\nTagliato e cucito a Roma: la sartoria romana incontra una linea contemporanea, pulita, senza tempo.",
-      "immagine": "assets/images/prodotti/saturno.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "Giove",
-      "tr": {
-        "en": {
-          "nome": "Flaminia – Long double-face wool coat",
-          "descrizione": "Giove Collection · The long coat for winter: double virgin wool, silver ring in the cut. Made in Rome.",
-          "descrizione_completa": "Giove Collection.\nLong coat in double-face virgin wool, hand-sewn seams, silk interior. A timeless classic for the cold seasons.\nCut and sewn in Rome: Roman tailoring meets a contemporary, clean, timeless line."
-        }
-      }
-    },
-    {
-      "tipo": "fisico",
       "id": "apollo",
       "nome": "Pincio – Polo in seta e cotone",
       "categoria": "uomo",
