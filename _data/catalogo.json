@@ -664,11 +664,11 @@
       "tipo": "fisico",
       "id": "portafoglio-in-pelle",
       "nome": "Portafoglio in pelle",
-      "categoria": "piccola-pelletteria",
+      "categoria": "borse-a-tracolla-in-pelle",
       "prezzo_centesimi": 21000,
       "descrizione": "Vera pelle, finitura in morbida pelle, protezione RFID.",
       "descrizione_completa": "Vera pelle\nFinitura in morbida pelle\nProtezione RFID\nDesign a tre ante con cerniera\n8 slot per carte\n1 finestra ID",
-      "immagine": "assets/images/prodotti/portafoglio-in-pelle.webp?v=1",
+      "immagine": "assets/images/prodotti/portafoglio-in-pelle.webp?v=2",
       "icona": "",
       "visibile": true,
       "collezione": ""
