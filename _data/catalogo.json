@@ -75,6 +75,17 @@
           "nome": "Leather Wallets women"
         }
       }
+    },
+    {
+      "nome": "Portapassaporti in pelle donna",
+      "id": "portapassaporti-in-pelle",
+      "icona": "",
+      "genitore": "donna",
+      "tr": {
+        "en": {
+          "nome": "Leather Passport holders women"
+        }
+      }
     }
   ],
   "prodotti": [
