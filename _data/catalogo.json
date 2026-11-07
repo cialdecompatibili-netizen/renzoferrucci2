@@ -675,6 +675,23 @@
         "url": "https://www.etsy.com/it/listing/829107628/cintura-in-pelle-classica-marrone-casual",
         "acquisto": 53.3
       }
+    },
+    {
+      "tipo": "fisico",
+      "id": "zaino-per-laptop-da-16-in-pelle",
+      "nome": "Zaino per laptop da 16 in pelle",
+      "categoria": "zaini-in-pelle-uomo",
+      "prezzo_centesimi": 48000,
+      "descrizione": "Pelle pieno fiore, all'interno: 1 interfaccia USB, 1 scomparto per laptop, 1 tasca per portafoglio, 1 tasca per cellulare., tracolla regolabile.",
+      "descrizione_completa": "Pelle pieno fiore\nAll'interno: 1 interfaccia USB, 1 scomparto per laptop, 1 tasca per portafoglio, 1 tasca per cellulare.\nTracolla regolabile\nPuò contenere un laptop da 16\".\n",
+      "immagine": "assets/images/prodotti/zaino-per-laptop-da-16-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/1808222415/zaino-per-laptop-da-16-pollici-in-pelle",
+        "acquisto": 158.52
+      }
     }
   ]
 }
