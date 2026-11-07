@@ -33,17 +33,6 @@
       }
     },
     {
-      "nome": "Accessori donna",
-      "id": "accessori-donna",
-      "icona": "",
-      "genitore": "donna",
-      "tr": {
-        "en": {
-          "nome": "Accessories women"
-        }
-      }
-    },
-    {
       "nome": "Accessori uomo",
       "id": "accessori-uomo",
       "icona": "",
