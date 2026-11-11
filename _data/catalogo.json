@@ -602,7 +602,7 @@
       "categoria": "borse-a-tracolla-in-pelle",
       "prezzo_centesimi": 49000,
       "descrizione": "Dalla mattina presto alla cena tardi, regge ogni ritmo senza perdere compostezza.",
-      "descrizione_completa": "Ci sono oggetti che non si possiedono: si abitano. Poche linee, un pellame scelto con cura, cuciture che resistono al tempo: il resto lo scrive l'uso quotidiano. Dalla mattina presto alla cena tardi, regge ogni ritmo senza perdere compostezza.\n\nCaratteristiche e misure\nAltezza (escluse le maniglie): 23 cm",
+      "descrizione_completa": "Ci sono oggetti che non si possiedono: si abitano. Poche linee, un pellame scelto con cura, cuciture che resistono al tempo: il resto lo scrive l'uso quotidiano. Dalla mattina presto alla cena tardi, regge ogni ritmo senza perdere compostezza.\n\nCaratteristiche e misure\nAltezza (escluse le maniglie): 23 cm\nMisure disponibili (lunghezza × larghezza × altezza): Piccola 37–39 × 13 × 20 cm, Grande 44 × 14 × 23 cm. Misure approssimative.",
       "immagine": "assets/images/prodotti/borsa-a-tracolla-vittoria-in-pelle.webp?v=2",
       "icona": "",
       "visibile": true,
@@ -611,6 +611,78 @@
         "url": "https://www.etsy.com/it/listing/4351353467/disponibile-borsa-a-tracolla-mila-retro",
         "acquisto": 160.25,
         "foto": "lusso"
+      },
+      "varianti": {
+        "opzioni": [
+          {
+            "id": "misura",
+            "nome": "Misura",
+            "tr": {
+              "en": "Size"
+            },
+            "valori": [
+              {
+                "id": "grande",
+                "nome": "Grande · 44 × 14 × 23 cm",
+                "tr": {
+                  "en": "Grande · 44 × 14 × 23 cm"
+                }
+              },
+              {
+                "id": "piccola",
+                "nome": "Piccola · 37–39 × 13 × 20 cm",
+                "tr": {
+                  "en": "Piccola · 37–39 × 13 × 20 cm"
+                }
+              },
+              {
+                "id": "extra-grande",
+                "nome": "Extra grande",
+                "tr": {
+                  "en": "Extra grande"
+                }
+              }
+            ]
+          }
+        ],
+        "combinazioni": [
+          {
+            "id": "grande",
+            "v": [
+              "grande"
+            ],
+            "p": 55000,
+            "n": "Grande · 44 × 14 × 23 cm",
+            "tr": {
+              "en": "Grande · 44 × 14 × 23 cm"
+            }
+          },
+          {
+            "id": "piccola",
+            "v": [
+              "piccola"
+            ],
+            "p": 49000,
+            "n": "Piccola · 37–39 × 13 × 20 cm",
+            "tr": {
+              "en": "Piccola · 37–39 × 13 × 20 cm"
+            }
+          },
+          {
+            "id": "extra-grande",
+            "v": [
+              "extra-grande"
+            ],
+            "p": 70000,
+            "n": "Extra grande",
+            "tr": {
+              "en": "Extra grande"
+            }
+          }
+        ]
+      },
+      "tr": {
+        "en": {}
       }
     },
     {
