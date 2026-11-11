@@ -651,24 +651,6 @@
     },
     {
       "tipo": "fisico",
-      "id": "borsa-a-tracolla-stile-boho-portico-in-pelle",
-      "nome": "Borsa a tracolla stile boho Portico in pelle",
-      "categoria": "borse-a-tracolla-in-pelle",
-      "prezzo_centesimi": 9000,
-      "descrizione": "Il cuoio giusto fa la differenza: si lascia toccare, ricorda ogni stagione e restituisce, con gli anni, un colore tutto suo.",
-      "descrizione_completa": "Roma conosce il valore del tempo. Segni, lucidature e piccole imperfezioni diventano carattere: un oggetto pensato per migliorare con gli anni, non per inseguire la moda. Il cuoio giusto fa la differenza: si lascia toccare, ricorda ogni stagione e restituisce, con gli anni, un colore tutto suo.",
-      "immagine": "assets/images/prodotti/borsa-a-tracolla-stile-boho-portico-in-pelle.webp?v=2",
-      "icona": "",
-      "visibile": true,
-      "collezione": "",
-      "fonte": {
-        "url": "https://www.etsy.com/it/listing/4550822518/borsa-a-tracolla-stile-boho-hobo-borsa-a",
-        "acquisto": 28.46,
-        "foto": "lusso"
-      }
-    },
-    {
-      "tipo": "fisico",
       "id": "borsa-quirinale-in-pelle",
       "nome": "Borsa Quirinale in pelle",
       "categoria": "borse-in-pelle",
