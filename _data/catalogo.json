@@ -97,6 +97,17 @@
           "nome": "Leather backpacks men"
         }
       }
+    },
+    {
+      "nome": "Borse a tracolla in pelle uomo",
+      "id": "borse-a-tracolla-in-pelle-uomo",
+      "icona": "",
+      "genitore": "uomo",
+      "tr": {
+        "en": {
+          "nome": "Leather shoulder bags men"
+        }
+      }
     }
   ],
   "prodotti": [
