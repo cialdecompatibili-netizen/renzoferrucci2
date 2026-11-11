@@ -702,6 +702,42 @@
         "acquisto": 28.46,
         "foto": "originale"
       }
+    },
+    {
+      "tipo": "fisico",
+      "id": "borsa-quirinale-in-pelle",
+      "nome": "Borsa Quirinale in pelle",
+      "categoria": "borse-in-pelle",
+      "prezzo_centesimi": 44000,
+      "descrizione": "Un classico che non ha bisogno di presentazioni: proporzioni equilibrate, pelle viva, la sicurezza di una scelta giusta.",
+      "descrizione_completa": "La bellezza nasce dalla misura. Nei laboratori dove la pelletteria è una tradizione tramandata, ogni pezzo nasce da un gesto lento: scegliere il pellame, tagliarlo, cucirlo con pazienza. Un classico che non ha bisogno di presentazioni: proporzioni equilibrate, pelle viva, la sicurezza di una scelta giusta.",
+      "immagine": "assets/images/prodotti/borsa-quirinale-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/1803747590/borsa-da-cowgirl-in-pelle-marrone-borsa",
+        "acquisto": 143.77,
+        "foto": "originale"
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "vintage-vacchetta-extra-large-navona-in-pelle",
+      "nome": "Vintage vacchetta extra large Navona in pelle",
+      "categoria": "borse-a-tracolla-in-pelle",
+      "prezzo_centesimi": 50000,
+      "descrizione": "Un dettaglio che fa la differenza: piccolo, essenziale, scelto da chi riconosce la bellezza nelle cose di ogni giorno.",
+      "descrizione_completa": "Ci sono gesti che si ripetono ogni giorno e meritano un oggetto all'altezza. Segni, lucidature e piccole imperfezioni diventano carattere: un oggetto pensato per migliorare con gli anni, non per inseguire la moda. Un dettaglio che fa la differenza: piccolo, essenziale, scelto da chi riconosce la bellezza nelle cose di ogni giorno.\n\nCaratteristiche e misure\nDescrizione del prodotto:\nQuando non vengono utilizzati, conservare gli articoli in pelle in un luogo asciutto e ben ventilato per evitare la formazione di muffa.\nPer la manutenzione ordinaria, pulire la superficie con un panno morbido e asciutto per rimuovere polvere e sporco.\nPer una pulizia profonda, utilizzare un detergente specifico per la pelle. Evitare l'uso di acqua, poiché potrebbe macchiare la pelle.\nTenere la pelle lontana dall'esposizione prolungata alla luce solare diretta e al calore, poiché ciò può causarne lo scolorimento e l'essiccazione.\nAltezza (maniglia esclusa): 23 cm",
+      "immagine": "assets/images/prodotti/vintage-vacchetta-extra-large-navona-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/1801244540/borsa-a-mano-vintage-in-pelle-di",
+        "acquisto": 163.58,
+        "foto": "originale"
+      }
     }
   ]
 }
