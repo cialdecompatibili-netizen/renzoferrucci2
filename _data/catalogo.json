@@ -782,7 +782,7 @@
       "categoria": "borse-in-pelle",
       "prezzo_centesimi": 44000,
       "descrizione": "Un classico che non ha bisogno di presentazioni: proporzioni equilibrate, pelle viva, la sicurezza di una scelta giusta.",
-      "descrizione_completa": "La bellezza nasce dalla misura. Nei laboratori dove la pelletteria è una tradizione tramandata, ogni pezzo nasce da un gesto lento: scegliere il pellame, tagliarlo, cucirlo con pazienza. Un classico che non ha bisogno di presentazioni: proporzioni equilibrate, pelle viva, la sicurezza di una scelta giusta.",
+      "descrizione_completa": "La bellezza nasce dalla misura. Nei laboratori dove la pelletteria è una tradizione tramandata, ogni pezzo nasce da un gesto lento: scegliere il pellame, tagliarlo, cucirlo con pazienza. Un classico che non ha bisogno di presentazioni: proporzioni equilibrate, pelle viva, la sicurezza di una scelta giusta.\nMisure disponibili (lunghezza × larghezza × altezza): Standard + tracolla 26,7 × 7,6 × 20,3 cm, Standard + tracolla e spalla 26,7 × 7,6 × 20,3 cm, Grande + tracolla 31,8 × 10,2 × 22,9 cm, Grande + tracolla e spalla 31,8 × 10,2 × 22,9 cm. Misure approssimative.",
       "immagine": "assets/images/prodotti/borsa-quirinale-in-pelle.webp?v=2",
       "icona": "",
       "visibile": true,
@@ -791,6 +791,96 @@
         "url": "https://www.etsy.com/it/listing/1803747590/borsa-da-cowgirl-in-pelle-marrone-borsa",
         "acquisto": 143.77,
         "foto": "lusso"
+      },
+      "varianti": {
+        "opzioni": [
+          {
+            "id": "misura",
+            "nome": "Misura",
+            "tr": {
+              "en": "Size"
+            },
+            "valori": [
+              {
+                "id": "standard-tracolla",
+                "nome": "Standard + tracolla · 26,7 × 7,6 × 20,3 cm",
+                "tr": {
+                  "en": "Standard + tracolla · 26,7 × 7,6 × 20,3 cm"
+                }
+              },
+              {
+                "id": "standard-tracolla-e-spalla",
+                "nome": "Standard + tracolla e spalla · 26,7 × 7,6 × 20,3 cm",
+                "tr": {
+                  "en": "Standard + tracolla e spalla · 26,7 × 7,6 × 20,3 cm"
+                }
+              },
+              {
+                "id": "grande-tracolla",
+                "nome": "Grande + tracolla · 31,8 × 10,2 × 22,9 cm",
+                "tr": {
+                  "en": "Grande + tracolla · 31,8 × 10,2 × 22,9 cm"
+                }
+              },
+              {
+                "id": "grande-tracolla-e-spalla",
+                "nome": "Grande + tracolla e spalla · 31,8 × 10,2 × 22,9 cm",
+                "tr": {
+                  "en": "Grande + tracolla e spalla · 31,8 × 10,2 × 22,9 cm"
+                }
+              }
+            ]
+          }
+        ],
+        "combinazioni": [
+          {
+            "id": "standard-tracolla",
+            "v": [
+              "standard-tracolla"
+            ],
+            "p": 44000,
+            "n": "Standard + tracolla · 26,7 × 7,6 × 20,3 cm",
+            "tr": {
+              "en": "Standard + tracolla · 26,7 × 7,6 × 20,3 cm"
+            }
+          },
+          {
+            "id": "standard-tracolla-e-spalla",
+            "v": [
+              "standard-tracolla-e-spalla"
+            ],
+            "p": 55000,
+            "n": "Standard + tracolla e spalla · 26,7 × 7,6 × 20,3 cm",
+            "tr": {
+              "en": "Standard + tracolla e spalla · 26,7 × 7,6 × 20,3 cm"
+            }
+          },
+          {
+            "id": "grande-tracolla",
+            "v": [
+              "grande-tracolla"
+            ],
+            "p": 55000,
+            "n": "Grande + tracolla · 31,8 × 10,2 × 22,9 cm",
+            "tr": {
+              "en": "Grande + tracolla · 31,8 × 10,2 × 22,9 cm"
+            }
+          },
+          {
+            "id": "grande-tracolla-e-spalla",
+            "v": [
+              "grande-tracolla-e-spalla"
+            ],
+            "p": 47000,
+            "n": "Grande + tracolla e spalla · 31,8 × 10,2 × 22,9 cm",
+            "tr": {
+              "en": "Grande + tracolla e spalla · 31,8 × 10,2 × 22,9 cm"
+            }
+          }
+        ]
+      },
+      "tr": {
+        "en": {}
       }
     }
   ]
