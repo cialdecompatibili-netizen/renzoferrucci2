@@ -40,8 +40,6 @@ Negozio:
     url: /negozio/categoria/uomo/
   - title: "Donna"
     url: /negozio/categoria/donna/
-  - title: "Accessori"
-    url: /negozio/categoria/accessori/
 
 Journal:
   - title: "Stilisti"
