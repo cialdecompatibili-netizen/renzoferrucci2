@@ -637,6 +637,24 @@
         "acquisto": 100.88,
         "foto": "lusso"
       }
+    },
+    {
+      "tipo": "fisico",
+      "id": "borsa-cassia-in-pelle",
+      "nome": "Borsa Cassia in pelle",
+      "categoria": "borse-a-tracolla-in-pelle",
+      "prezzo_centesimi": 31000,
+      "descrizione": "Il genere di borsa che si sceglie una volta e si tiene per anni: più la usi, più ti somiglia.",
+      "descrizione_completa": "Il lusso vero è silenzioso. Segni, lucidature e piccole imperfezioni diventano carattere: un oggetto pensato per migliorare con gli anni, non per inseguire la moda. Il genere di borsa che si sceglie una volta e si tiene per anni: più la usi, più ti somiglia.\n\nCaratteristiche e misure\nAltezza (maniglia esclusa): 34 cm\nProfondità: 14 cm\nLarghezza: 39 cm",
+      "immagine": "assets/images/prodotti/borsa-cassia-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/294947823",
+        "acquisto": 100.88,
+        "foto": "lusso"
+      }
     }
   ]
 }
