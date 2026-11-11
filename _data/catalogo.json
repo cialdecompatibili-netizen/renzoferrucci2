@@ -108,6 +108,17 @@
           "nome": "Leather shoulder bags men"
         }
       }
+    },
+    {
+      "nome": "Borse in pelle donna",
+      "id": "borse-in-pelle",
+      "icona": "",
+      "genitore": "donna",
+      "tr": {
+        "en": {
+          "nome": "Leather handbags women"
+        }
+      }
     }
   ],
   "prodotti": [
@@ -636,6 +647,60 @@
         "url": "https://www.etsy.com/it/listing/294947823",
         "acquisto": 100.88,
         "foto": "lusso"
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "borsa-a-tracolla-scamosciata-salaria-in-pelle",
+      "nome": "Borsa a tracolla scamosciata Salaria in pelle",
+      "categoria": "borse-a-tracolla-in-pelle",
+      "prezzo_centesimi": 16000,
+      "descrizione": "Disegnata per accogliere l'essenziale e nient'altro: poche linee pulite, una pelle che parla da sola.",
+      "descrizione_completa": "Roma conosce il valore del tempo. Come fanno i grandi atelier europei, che hanno fatto della pelle un linguaggio, scegliamo un solo pellame e lo lasciamo parlare: grana viva, profumo di concia, tagli netti, cuciture pazienti. Disegnata per accogliere l'essenziale e nient'altro: poche linee pulite, una pelle che parla da sola.\n\nCaratteristiche e misure\nEcopelle scamosciata vellutata di alta qualità: ecopelle scamosciata in PU resistente all'acqua, morbidissima al tatto e dalla struttura durevole.\nSet pratico 2 in 1: include una piccola pochette interna coordinata in omaggio per organizzare cosmetici, chiavi e oggetti di valore.\nCuciture doppie precise: le linee di cucitura pulite e rinforzate evidenziano la maestria artigianale e la robustezza strutturale.\nAmpia altezza del manico (30 cm): la tracolla ergonomica integrata si adatta comodamente a cappotti spessi, giacche e gilet.\nComoda chiusura magnetica a scatto: la chiusura a scatto sicura mantiene i tuoi effetti personali al sicuro consentendo al contempo un accesso rapido.\nMateriale: Pelle scamosciata sintetica PU di alta qualità + Fodera interna in poliestere liscio",
+      "immagine": "assets/images/prodotti/borsa-a-tracolla-scamosciata-salaria-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/4573796056/borsa-a-tracolla-hobo-in-pelle",
+        "acquisto": 50.71,
+        "foto": "originale"
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "borsa-a-tracolla-scamosciata-condotti-in-pelle",
+      "nome": "Borsa a tracolla scamosciata Condotti in pelle",
+      "categoria": "borse-a-tracolla-in-pelle",
+      "prezzo_centesimi": 16000,
+      "descrizione": "Un volume generoso, una linea sobria, e quella naturalezza di chi non ha bisogno di dimostrare nulla.",
+      "descrizione_completa": "Roma conosce il valore del tempo. Materiali selezionati, rifiniture a regola d'arte e una patina che si forma col tempo: ciò che resta quando la moda passa. Un volume generoso, una linea sobria, e quella naturalezza di chi non ha bisogno di dimostrare nulla.\n\nCaratteristiche e misure\nEcopelle scamosciata vellutata di alta qualità: ecopelle scamosciata in PU resistente all'acqua, morbidissima al tatto e dalla struttura durevole.\nSet pratico 2 in 1: include una piccola pochette interna coordinata in omaggio per organizzare cosmetici, chiavi e oggetti di valore.\nCuciture doppie precise: le linee di cucitura pulite e rinforzate evidenziano la maestria artigianale e la robustezza strutturale.\nAmpia altezza del manico (30 cm): la tracolla ergonomica integrata si adatta comodamente a cappotti spessi, giacche e gilet.\nComoda chiusura magnetica a scatto: la chiusura a scatto sicura mantiene i tuoi effetti personali al sicuro consentendo al contempo un accesso rapido.\nMateriale: Pelle scamosciata sintetica PU di alta qualità + Fodera interna in poliestere liscio",
+      "immagine": "assets/images/prodotti/borsa-a-tracolla-scamosciata-condotti-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/4573796056/borsa-a-tracolla-hobo-in-pelle",
+        "acquisto": 50.71,
+        "foto": "originale"
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "borsa-a-tracolla-stile-boho-portico-in-pelle",
+      "nome": "Borsa a tracolla stile boho Portico in pelle",
+      "categoria": "borse-a-tracolla-in-pelle",
+      "prezzo_centesimi": 9000,
+      "descrizione": "Il cuoio giusto fa la differenza: si lascia toccare, ricorda ogni stagione e restituisce, con gli anni, un colore tutto suo.",
+      "descrizione_completa": "Roma conosce il valore del tempo. Segni, lucidature e piccole imperfezioni diventano carattere: un oggetto pensato per migliorare con gli anni, non per inseguire la moda. Il cuoio giusto fa la differenza: si lascia toccare, ricorda ogni stagione e restituisce, con gli anni, un colore tutto suo.",
+      "immagine": "assets/images/prodotti/borsa-a-tracolla-stile-boho-portico-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/4550822518/borsa-a-tracolla-stile-boho-hobo-borsa-a",
+        "acquisto": 28.46,
+        "foto": "originale"
       }
     }
   ]
