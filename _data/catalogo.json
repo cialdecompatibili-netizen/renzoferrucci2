@@ -619,6 +619,24 @@
         "acquisto": 140.24,
         "foto": "originale"
       }
+    },
+    {
+      "tipo": "fisico",
+      "id": "borsa-palatino-in-pelle",
+      "nome": "Borsa Palatino in pelle",
+      "categoria": "borse-a-tracolla-in-pelle",
+      "prezzo_centesimi": 31000,
+      "descrizione": "Costruita attorno a una forma semplice, rivela il suo carattere nei dettagli: una cucitura, una fibbia, il riflesso della pelle alla luce.",
+      "descrizione_completa": "Ci sono gesti che si ripetono ogni giorno e meritano un oggetto all'altezza. Come fanno i grandi atelier europei, che hanno fatto della pelle un linguaggio, scegliamo un solo pellame e lo lasciamo parlare: grana viva, profumo di concia, tagli netti, cuciture pazienti. Costruita attorno a una forma semplice, rivela il suo carattere nei dettagli: una cucitura, una fibbia, il riflesso della pelle alla luce.\n\nCaratteristiche e misure\nProfondità: 5 cm\nLarghezza: 5 cm",
+      "immagine": "assets/images/prodotti/borsa-palatino-in-pelle.webp?v=1",
+      "icona": "",
+      "visibile": true,
+      "collezione": "",
+      "fonte": {
+        "url": "https://www.etsy.com/it/listing/294947823",
+        "acquisto": 100.88,
+        "foto": "lusso"
+      }
     }
   ]
 }
