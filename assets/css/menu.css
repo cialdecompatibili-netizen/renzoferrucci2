@@ -192,3 +192,7 @@ a.nv__dd-item.active, a.nv__dd-item.active:visited, a.nv__dd-item.active:hover {
   .nv__tools { padding-left: .35em; gap: .35em; }
   .nv__tools .search__toggle, .nv__cart { font-size: 1em; padding: .5em .55em; }
 }
+/* Brand: wordmark corsivo + sigillo rombo */
+.nv__brand{font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;font-style:italic;font-weight:600;font-size:1.45rem;letter-spacing:.01em;text-transform:none}
+.nv__logo{border-radius:6px;box-shadow:none}
+

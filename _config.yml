@@ -209,3 +209,5 @@ ecommerce: true
 # Vuoto = il pulsante 'Invia richiesta d'ordine' resta spento.
 ordini:
   tracker: ""
+
+masthead_title: "Renzo Ferrucci"
